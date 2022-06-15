@@ -48,3 +48,16 @@ header > .container > nav > ul > li > a {
   font-size: 1.2em;
   letter-spacing: 2px;
 }
+
+.img-fluid {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
