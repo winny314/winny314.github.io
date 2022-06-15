@@ -32,6 +32,7 @@ header{
 }
 
 header>.container>h1{
+
     padding-top: 20px;
     color: rgb(73, 73, 73);
 
@@ -58,7 +59,7 @@ header>.container>nav>ul>li>a{
 
 
 // =========================
-// 內容區塊
+// 內容區塊body
 // =========================
 
 .img-fluid{
@@ -66,8 +67,20 @@ header>.container>nav>ul>li>a{
 }
 .row{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  /*換行*/
+}
+.col-3{
+    width: calc(100% / 4 - 30);
+    margin: 0px 15px 40px 15px;
+    // 上右下左
 }
 .col-4{
-    width: 33.33333%;
+    width: calc(100% / 3 - 30);
+    margin: 0px 15px 40px 15px;
+    // 上右下左
+}
+.col-6{
+    width: calc(100% / 2 - 30);
+    margin: 0px 15px 40px 15px;
+    // 上右下左
 }
