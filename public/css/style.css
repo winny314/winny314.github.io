@@ -54,6 +54,30 @@ header > .container > nav > ul > li > a {
   width: 100%;
 }
 
+.img-rounded {
+  border-radius: 5px;
+}
+
+.img-circle {
+  border-radius: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -61,16 +85,26 @@ header > .container > nav > ul > li > a {
 }
 
 .col-3 {
-  width: calc(100% / 4 - 30);
+  width: calc(100% / 4 - 30px);
   margin: 0px 15px 40px 15px;
 }
 
 .col-4 {
-  width: calc(100% / 3 - 30);
+  width: calc(100% / 3 - 30px);
   margin: 0px 15px 40px 15px;
 }
 
 .col-6 {
-  width: calc(100% / 2 - 30);
+  width: calc(100% / 2 - 30px);
   margin: 0px 15px 40px 15px;
+}
+
+.title a {
+  color: #494949;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.date {
+  color: #1b8617;
 }

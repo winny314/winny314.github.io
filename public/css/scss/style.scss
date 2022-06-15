@@ -40,6 +40,7 @@ header>.container>h1{
 header>.container>h1>a{
     color:$primary-color;
 }
+
 header>.container>nav>ul{
     display: flex;
     // justify-content: space-between;
@@ -58,29 +59,71 @@ header>.container>nav>ul>li>a{
 }
 
 
+
+
 // =========================
 // 內容區塊body
 // =========================
 
+
+// 圖片相關樣式
 .img-fluid{
     width: 100%;
 }
+
+.img-rounded{
+    border-radius: 5px;    
+}
+
+.img-circle{
+    border-radius: 100%;
+}
+
+// 文字相關樣式
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;  /*換行*/
 }
+// 四欄
 .col-3{
-    width: calc(100% / 4 - 30);
+    width: calc(100% / 4 - 30px);
     margin: 0px 15px 40px 15px;
     // 上右下左
 }
+// 三欄
 .col-4{
-    width: calc(100% / 3 - 30);
+    width: calc(100% / 3 - 30px);
     margin: 0px 15px 40px 15px;
     // 上右下左
 }
+
+// 兩欄
 .col-6{
-    width: calc(100% / 2 - 30);
+    width: calc(100% / 2 - 30px);
     margin: 0px 15px 40px 15px;
     // 上右下左
+}
+.title a{
+    color: rgb(73, 73, 73);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.date{
+    color: $primary-color;
 }
