@@ -1,3 +1,15 @@
+$primary-color:rgb(96, 179, 90);
+
 body{
-    background-color: aquamarine;
+      font-family: Impact ,"微軟正黑體";
+      color: $primary-color;
+} 
+
+.btn-primary{
+    background-color: $primary-color;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 2px;
 }
