@@ -79,6 +79,11 @@ header>.container>nav>ul>li>a{
     border-radius: 100%;
 }
 
+.img:hover{
+    transform: all .5s scale(1.5);
+}
+
+
 // 文字相關樣式
 .text-center{
     text-align: center;
@@ -96,6 +101,7 @@ header>.container>nav>ul>li>a{
     text-align: justify;
 }
 
+// 區塊相關樣式
 .row{
     display: flex;
     flex-wrap: wrap;  /*換行*/
@@ -126,4 +132,31 @@ header>.container>nav>ul>li>a{
 }
 .date{
     color: $primary-color;
+}
+
+h2{
+    font-size: 2em;
+    margin: 60px auto 30px auto;
+}
+
+// ==============================
+// 頁尾區塊
+// ==============================
+footer{
+    background-color:rgb(168, 239, 215);
+    padding: 40px 0 40px 0;
+}
+dt{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: $primary-color;
+}
+
+dd{
+    margin-bottom: 4px;
+
+}
+
+dd>a{
+    color: rgb(73, 73, 73);;
 }
