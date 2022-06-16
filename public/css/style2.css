@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background-color: #a8efd7;
+  background-color: #c6e5e2;
 }
 
 header > .container > h1 {
@@ -32,7 +32,7 @@ header > .container > h1 {
 }
 
 header > .container > h1 > a {
-  color: #1b8617;
+  color: #5c8e67;
 }
 
 header > .container > nav > ul {
@@ -45,7 +45,7 @@ header > .container > nav > ul > li {
 
 header > .container > nav > ul > li > a {
   line-height: 60px;
-  color: #1b8617;
+  color: #5c8e67;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
@@ -129,7 +129,7 @@ header > .container > nav > ul > li > a {
 }
 
 .date {
-  color: #1b8617;
+  color: #5c8e67;
 }
 
 h2 {
@@ -139,14 +139,14 @@ h2 {
 
 footer {
   clear: both;
-  background-color: #a8efd7;
+  background-color: #c6e5e2;
   padding: 40px 0 40px 0;
 }
 
 dt {
   font-size: 1.2em;
   margin-bottom: 10px;
-  color: #1b8617;
+  color: #5c8e67;
 }
 
 dd {
