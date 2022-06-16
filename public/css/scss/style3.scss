@@ -28,7 +28,7 @@ body{
 // =============================
 
 header{
-    background-color: rgb(79, 139, 119);
+    background-color: rgb(198, 229, 226);
 }
 
 header>.container>h1{
@@ -38,7 +38,7 @@ header>.container>h1{
 
 }
 header>.container>h1>a{
-    color:#fff;
+    color:$primary-color;
 }
 
 header>.container>nav>ul{
@@ -53,7 +53,7 @@ header>.container>nav>ul>li{
 
 header>.container>nav>ul>li>a{
     line-height: 60px;
-    color:rgb(255, 255, 255);
+    color:$primary-color;
     font-size: 1.2em;
    letter-spacing: 2px;
 }
@@ -92,10 +92,9 @@ header>.container>nav>ul>li>a{
 .text-left{
     text-align: left;
     margin: 0;
-    margin-left: 15px;
-    margin-bottom: 50px;
+    margin-left: 13px;
+    margin-bottom: 12px;
     color: rgb(79, 139, 119);
-    font-size: 20px;
 
 
 }
@@ -238,44 +237,11 @@ dd>a{
     color: #fff;
     font-size: 20px;
 }
-
-.text-primary{
-    color:rgb(79, 139, 119);
+.col-4>img{
+    transform: all .5s;
 
 }
-
-.img-wrap{
-    display: block;
-    position: relative;
-    margin-bottom: 10px;
-  
-}
-
-.img-overlay{
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.img-wrap img{
-    vertical-align: top;
-    transition: all 0.5s;
-}
-
-.img-wrap img:hover{
+.col-4>img:hover{
     transform: scale(1.5);
+
 }
-
-.icon-new {
-    position: absolute;
-    width: 50px;
-    line-height: 50px;
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 100%;
-    left: -25px;
-    top: -25px;
-    background-color: rgb(73, 212, 55);
-  }
-   
-

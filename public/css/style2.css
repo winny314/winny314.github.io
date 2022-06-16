@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background-color: #c6e5e2;
+  background-color: #4f8b77;
 }
 
 header > .container > h1 {
@@ -32,7 +32,7 @@ header > .container > h1 {
 }
 
 header > .container > h1 > a {
-  color: #5c8e67;
+  color: #fff;
 }
 
 header > .container > nav > ul {
@@ -45,7 +45,7 @@ header > .container > nav > ul > li {
 
 header > .container > nav > ul > li > a {
   line-height: 60px;
-  color: #5c8e67;
+  color: white;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
@@ -73,9 +73,10 @@ header > .container > nav > ul > li > a {
 .text-left {
   text-align: left;
   margin: 0;
-  margin-left: 13px;
-  margin-bottom: 12px;
+  margin-left: 15px;
+  margin-bottom: 50px;
   color: #4f8b77;
+  font-size: 20px;
 }
 
 .text-right {
@@ -199,10 +200,39 @@ dd > a {
   font-size: 20px;
 }
 
-.col-4 > img {
-  transform: all 0.5s;
+.text-primary {
+  color: #4f8b77;
 }
 
-.col-4 > img:hover {
+.img-wrap {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.img-overlay {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.img-wrap img {
+  vertical-align: top;
+  transition: all 0.5s;
+}
+
+.img-wrap img:hover {
   transform: scale(1.5);
+}
+
+.icon-new {
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 100%;
+  left: -25px;
+  top: -25px;
+  background-color: #49d437;
 }
