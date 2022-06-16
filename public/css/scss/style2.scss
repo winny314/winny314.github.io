@@ -91,7 +91,13 @@ header>.container>nav>ul>li>a{
 
 .text-left{
     text-align: left;
+    margin: 0;
+    margin-left: 13px;
+    margin-bottom: 10px;
+    color: rgb(79, 139, 119);
+
 }
+
 
 .text-right{
     text-align: right;
@@ -125,6 +131,27 @@ header>.container>nav>ul>li>a{
     margin: 0px 15px 40px 15px;
     // 上右下左
 }
+.col-8{
+    width: calc(100% / 1.5 - 30px);
+    margin: 0px 15px 40px 15px;
+    // 上右下左
+}
+.col-9{
+    width: calc(100% / 1.3333333 - 30px);
+    margin: 0px 15px 40px 15px;
+    // 上右下左
+}
+
+// 一欄式
+.col-12{
+    width: calc(100% / 12 - 30px);
+    margin: 0px 15px 40px 15px;
+    // 上右下左
+}
+
+
+
+
 .title a{
     color: rgb(73, 73, 73);
     font-size: 1.5em;
@@ -162,11 +189,28 @@ dd>a{
     color: rgb(73, 73, 73);
 }
 
-.left{
-    float: left;
 
+
+// ======================
+// 麵包屑
+
+.breedcrumb{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
-.right{
-    float: left;
+.breedcrumb a{
+    color:  rgb(73, 73, 73);
+    font-size: 18px;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.w-80{
+    width: 80%;
+
 }
