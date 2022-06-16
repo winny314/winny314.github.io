@@ -119,6 +119,7 @@ h2 {
 }
 
 footer {
+  clear: both;
   background-color: #a8efd7;
   padding: 40px 0 40px 0;
 }
@@ -135,4 +136,12 @@ dd {
 
 dd > a {
   color: #494949;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: left;
 }

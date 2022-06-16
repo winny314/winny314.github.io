@@ -143,6 +143,7 @@ h2{
 // 頁尾區塊
 // ==============================
 footer{
+    clear: both;
     background-color:rgb(168, 239, 215);
     padding: 40px 0 40px 0;
 }
@@ -159,4 +160,13 @@ dd{
 
 dd>a{
     color: rgb(73, 73, 73);
+}
+
+.left{
+    float: left;
+
+}
+
+.right{
+    float: left;
 }
