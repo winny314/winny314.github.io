@@ -5,10 +5,10 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title Winny's Protfolio
-    link(rel='stylesheet' href='public/css/style2.css')
+    link(rel='stylesheet' href='public/css/style.css')
   body
     // header start
-    header
+    header.overflow-hidden
       .container
         h1
           a(href='index.html') Winny's Protfolio
@@ -27,11 +27,10 @@ html(lang='en')
     .container
       .row
         ul.breadcrumb
-          li.bread
-            a(href='index.html') 首頁
-          |  >            
-          li.bread
-            a(href='#') 3D建模作品
+            li.bread
+              a(href='index.html') 首頁
+            li.bread
+              a(href='#') 3D建模作品
         aside.col-3
           ul
             li
@@ -86,12 +85,12 @@ html(lang='en')
                 a(href='') 金色發條
               p.date.text-center 2022-6-16
     // content end
-    | .
+    
     // footer>.container>.row>dl.col-3*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright}
     footer
       .container
         .row
-          dl.col-3
+          dl.col-md-3
             dt 標題01
             dd
               a(href='#') 項目01
@@ -101,7 +100,7 @@ html(lang='en')
               a(href='#') 項目03
             dd
               a(href='#') 項目04
-          dl.col-3
+          dl.col-md-3
             dt 標題02
             dd
               a(href='#') 項目01
@@ -111,7 +110,7 @@ html(lang='en')
               a(href='#') 項目03
             dd
               a(href='#') 項目04
-          dl.col-3
+          dl.col-md-3
             dt 標題03
             dd
               a(href='#') 項目01
@@ -121,7 +120,7 @@ html(lang='en')
               a(href='#') 項目03
             dd
               a(href='#') 項目04
-          dl.col-3
+          dl.col-md-3
             dt 標題04
             dd
               a(href='#') 項目01

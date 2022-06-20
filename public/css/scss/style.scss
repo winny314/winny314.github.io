@@ -105,126 +105,36 @@ header>.container>nav>ul>li>a{
 .row{
     display: flex;
     flex-wrap: wrap;  /*換行*/
-}
-// 四欄
-.col-3{
-    width: calc(100% / 4 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-// 三欄
-.col-4{
-    width: calc(100% / 3 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-
-// 兩欄
-.col-6{
-    width: calc(100% / 2 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-.col-8{
-    width: calc(100% / 1.5 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-.col-9{
-    width: calc(100% / 1.3333333 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-
-// 一欄式
-.col-12{
-    width: calc(100% / 12 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-
-
-@media (min-width:768px) {
-    // 四欄
-.col-md-3{
-    width: calc(100% / 4 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-// 三欄
-.col-md-4{
-    width: calc(100% / 3 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-
-// 兩欄
-.col-md-6{
-    width: calc(100% / 2 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-.col-md-8{
-    width: calc(100% / 1.5 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-.col-md-9{
-    width: calc(100% / 1.3333333 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-
-// 一欄式
-.col-md-12{
-    width: calc(100% / 12 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-
     
 }
 
 
-@media (min-width:1200px) {
-    // 四欄
-.col-lg-3{
-    width: calc(100% / 4 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        --num: calc(12 / #{$i});
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
+    }
 }
-// 三欄
-.col-lg-4{
-    width: calc(100% / 3 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
+@media (min-width:768px){
+    @for $i from 1 through 12 {
+        .col-md-#{$i}{
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+} // 768px end
 
-// 兩欄
-.col-lg-6{
-    width: calc(100% / 2 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-.col-lg-8{
-    width: calc(100% / 1.5 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-.col-lg-9{
-    width: calc(100% / 1.3333333 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-
-// 一欄式
-.col-lg-12{
-    width: calc(100% / 12 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-    
-}
+@media (min-width:1200px){
+    @for $i from 1 through 12 {
+        .col-lg-#{$i}{
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+} // 1200px end
 
 
 .title a{
@@ -352,50 +262,51 @@ dd>a{
 /*===================================icon-menu=================================== */
 
 // ================================= 小於767px以上執行 start
-@media(max-width:767px){ 
-  h1{
-    width: 85%;
-    // background-color: #797979;
-    float: left;
-  }  
-  .icon-menu{
-    float: right;
-    width:15%;
-    display: block;
-    background-color: #b6e0b5;
-    color: rgb(73, 73, 73);
-    text-decoration: none;
-    line-height: 60px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-  }
-
-  header>.container>nav{
-    width: 100%;
-    float: left;
-    display: none;    //menu隱藏
-
-}
-   header>.container>nav.active{
-    display: block;    //menu隱藏
-
-}
+@media(max-width:767px){
+    h1{
+        width: 85%;
+        // background-color: #797979;
+        float: left;
+    }  
+    .icon-menu{
+        float: right;
+        width:15%;
+        display: block;
+        background-color: #b6e0b5;
+        color: rgb(73, 73, 73);
+        text-decoration: none;
+        line-height: 60px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    header>.container>nav{
+        width: 100%;
+        float: left;
+        display: none;    //menu隱藏
+    
+    }
+    header>.container>nav.active{
+        display: block;    //menu隱藏
+    
+    }
+      
+    header>.container>nav>ul{
+        display: block;
+    }
+    header>.container>nav> ul >li{
+        width: 100%;
+        text-align: center;    
+    }
+    header>.container>nav> ul >li >a{
+        display: block;    
+    }
+    .overflow-hidden{
+        overflow: hidden;
+    } 
   
-  header>.container>nav>ul{
-    display: block;
-  }
-  header>.container>nav> ul >li{
-    width: 100%;
-    text-align: center;    
-  }
-  header>.container>nav> ul >li >a{
-    display: block;    
-  }
-  .overflow-hidden{
-    overflow: hidden;
-  }
-} //=================================== max-width 767 end
+}  //=================================== max-width 767 end
 
 
 //===================================== 超過768px以上執行 start
@@ -403,4 +314,18 @@ dd>a{
     .icon-menu{
         display: none;
     }
-} //=================================== min-width768px end
+} // min-width 768 end
+// $i index
+// for迴圈
+// from through 從 1 開始到 3
+@for $i from 1 through 10 {
+    .fz-#{$i}{
+        font-size: $i*1em;
+    }
+}
+
+@for $i from 1 through 5 {
+    .mb-#{$i}{
+        margin-bottom: $i * 1em;
+    }
+}

@@ -5,11 +5,12 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title Winny's Protfolio
-    link(rel='stylesheet' href='public/css/style2.css')
+    link(rel='stylesheet' href='public/css/style.css')
   body
     // header start
     header.overflow-hidden
       .container
+        a.icon-menu(href="#") menu
         h1
           a(href='index.html') Winny's Protfolio
         nav
@@ -26,13 +27,12 @@ html(lang='en')
     // content start
     .container
       .row
-        ul.breadcrumb
+        ul.col-12.breadcrumb
           li.bread
-            a(href='index.html') 首頁
-          |            
+            a(href='index.html') 首頁            
           li.bread
             a(href='#') 3D建模作品
-        aside.col-3
+        aside.col-12.col-md-3.col-lg-2
           ul
             li
               a.btn-primary(href='') 發條王子
@@ -46,11 +46,11 @@ html(lang='en')
               a.btn-primary(href='') 邪惡發條
             li
               a.btn-primary(href='') 金色發條
-        main.col-9
+        main.col-12.col-md-9.col-lg-10
           h2.text-left 3D建模作品一覽
           .row
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded.img-transition(src='public/images/model01.jpg' alt='')
@@ -58,7 +58,7 @@ html(lang='en')
               a.text-primary(href='#') 發條王子
             // work end
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded.img-transition(src='public/images/model02.jpg' alt='')
@@ -66,7 +66,7 @@ html(lang='en')
               a.text-primary(href='#') 發條老鼠
             // work end
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded.img-transition(src='public/images/model03.jpg' alt='')
@@ -74,7 +74,7 @@ html(lang='en')
               a.text-primary(href='#') 發條熊
             // work end
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded.img-transition(src='public/images/c03-1.jpg' alt='')
@@ -82,63 +82,63 @@ html(lang='en')
               a.text-primary(href='#') 能量發條
             // work end
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded.img-transition(src='public/images/c02-3.jpg' alt='')
               a.text-primary(href='#') 邪惡發條
             // work end
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded.img-transition(src='public/images/c01-3.jpg' alt='')
               a.text-primary(href='#') 金色發條
             // work end
             // content end
-            | .
+          
             // footer>.container>.row>dl.col-3*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright}
-            footer
-              .container
-                .row
-                  dl.col-3
-                     dt 標題01
-                     dd
-                       a(href='#') 項目01
-                     dd
-                       a(href='#') 項目02
-                     dd
-                       a(href='#') 項目03
-                     dd
-                       a(href='#') 項目04
-                  dl.col-3
-                     dt 標題02
-                     dd
-                       a(href='#') 項目01
-                     dd
-                       a(href='#') 項目02
-                     dd
-                       a(href='#') 項目03
-                     dd
-                       a(href='#') 項目04
-                  dl.col-3
-                     dt 標題03
-                     dd
-                       a(href='#') 項目01
-                     dd
-                       a(href='#') 項目02
-                     dd
-                       a(href='#') 項目03
-                     dd
-                       a(href='#') 項目04
-                  dl.col-3
-                     dt 標題04
-                     dd
-                       a(href='#') 項目01
-                     dd
-                       a(href='#') 項目02
-                     dd
-                       a(href='#') 項目03
-                     dd
-                      a(href='#') 項目04
-                p.copyright.text-center 本站僅供學習使用，不用於商業用途
+    footer
+      .container
+        .row
+          dl.col-12.col-md-3
+            dt 標題01
+            dd
+              a(href='#') 項目01
+            dd
+              a(href='#') 項目02
+            dd
+              a(href='#') 項目03
+            dd
+              a(href='#') 項目04
+          dl.col-12.col-md-3
+            dt 標題02
+            dd
+              a(href='#') 項目01
+            dd
+              a(href='#') 項目02
+            dd
+              a(href='#') 項目03
+            dd
+              a(href='#') 項目04
+          dl.col-12.col-md-3
+            dt 標題03
+            dd
+              a(href='#') 項目01
+            dd
+              a(href='#') 項目02
+            dd
+              a(href='#') 項目03
+            dd
+              a(href='#') 項目04
+          dl.col-12.col-md-3
+            dt 標題04
+            dd
+              a(href='#') 項目01
+            dd
+              a(href='#') 項目02
+            dd
+              a(href='#') 項目03
+            dd
+              a(href='#') 項目04
+        p.copyright.text-center 本站僅供學習使用，不用於商業用途        
