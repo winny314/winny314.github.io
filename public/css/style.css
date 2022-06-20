@@ -306,6 +306,11 @@ header > .container > nav > ul > li > a {
     margin: 0px 15px 40px 15px;
   }
 }
+@media (min-width: 768px) {
+  .order-md-1 {
+    order: -1;
+  }
+}
 .title a {
   color: #494949;
   font-size: 1.5em;

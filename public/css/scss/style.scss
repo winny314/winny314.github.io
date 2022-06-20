@@ -136,6 +136,11 @@ header>.container>nav>ul>li>a{
     }
 } // 1200px end
 
+@media (min-width:768px){
+    .order-md-1{
+        order:-1;
+    }
+}
 
 .title a{
     color: rgb(73, 73, 73);
