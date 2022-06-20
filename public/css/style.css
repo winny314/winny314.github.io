@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background-color: #a8efd7;
+  background-color: #4f8b77;
 }
 
 header > .container > h1 {
@@ -32,7 +32,7 @@ header > .container > h1 {
 }
 
 header > .container > h1 > a {
-  color: #1b8617;
+  color: #ffffff;
 }
 
 header > .container > nav > ul {
@@ -45,7 +45,7 @@ header > .container > nav > ul > li {
 
 header > .container > nav > ul > li > a {
   line-height: 60px;
-  color: #1b8617;
+  color: #ffffff;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
@@ -119,14 +119,14 @@ h2 {
 }
 
 footer {
-  background-color: #a8efd7;
+  background-color: #4f8b77;
   padding: 40px 0 40px 0;
 }
 
 dt {
   font-size: 1.2em;
   margin-bottom: 10px;
-  color: #1b8617;
+  color: #ffffff;
 }
 
 dd {
@@ -135,4 +135,44 @@ dd {
 
 dd > a {
   color: #494949;
+}
+
+/* icon-menu */
+@media (max-width: 767px) {
+  h1 {
+    float: left;
+  }
+
+  .icon-menu {
+    float: right;
+    width: 15%;
+    display: block;
+    background-color: #1b8617;
+    color: black;
+    text-decoration: none;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  header > .container > nav {
+    width: 100%;
+    float: left;
+  }
+
+  header > .container > nav > ul {
+    display: block;
+  }
+
+  header nav ul li {
+    width: 100%;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+}
+@media (min-width: 768px) {
+  .icon-menu {
+    display: none;
+  }
 }
