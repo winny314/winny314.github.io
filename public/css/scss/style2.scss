@@ -278,4 +278,58 @@ dd>a{
     background-color: rgb(73, 212, 55);
   }
    
+/*===================================icon-menu=================================== */
 
+// ================================= 小於767px以上執行 start
+@media(max-width:767px){ 
+    h1{
+      width: 85%;
+      // background-color: #797979;
+      float: left;
+    }  
+    .icon-menu{
+      float: right;
+      width:15%;
+      display: block;
+      background-color: #b6e0b5;
+      color: rgb(73, 73, 73);
+      text-decoration: none;
+      line-height: 60px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  
+    header>.container>nav{
+      width: 100%;
+      float: left;
+      display: none;    //menu隱藏
+  
+  }
+     header>.container>nav.active{
+      display: block;    //menu隱藏
+  
+  }
+    
+    header>.container>nav>ul{
+      display: block;
+    }
+    header>.container>nav> ul >li{
+      width: 100%;
+      text-align: center;    
+    }
+    header>.container>nav> ul >li >a{
+      display: block;    
+    }
+    .overflow-hidden{
+      overflow: hidden;
+    }
+  } //=================================== max-width 767 end
+  
+  
+  //===================================== 超過768px以上執行 start
+  @media (min-width:768px){
+      .icon-menu{
+          display: none;
+      }
+  } //=================================== min-width768px end

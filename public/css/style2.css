@@ -140,14 +140,14 @@ h2 {
 
 footer {
   clear: both;
-  background-color:  #4f8b77;
+  background-color: #c6e5e2;
   padding: 40px 0 40px 0;
 }
 
 dt {
   font-size: 1.2em;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #5c8e67;
 }
 
 dd {
@@ -155,7 +155,7 @@ dd {
 }
 
 dd > a {
-  color: #2d2d2d;
+  color: #494949;
 }
 
 .breadcrumb {
@@ -237,3 +237,55 @@ dd > a {
   background-color: #49d437;
 }
 
+/*===================================icon-menu=================================== */
+@media (max-width: 767px) {
+  h1 {
+    width: 85%;
+    float: left;
+  }
+
+  .icon-menu {
+    float: right;
+    width: 15%;
+    display: block;
+    background-color: #b6e0b5;
+    color: #494949;
+    text-decoration: none;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  header > .container > nav {
+    width: 100%;
+    float: left;
+    display: none;
+  }
+
+  header > .container > nav.active {
+    display: block;
+  }
+
+  header > .container > nav > ul {
+    display: block;
+  }
+
+  header > .container > nav > ul > li {
+    width: 100%;
+    text-align: center;
+  }
+
+  header > .container > nav > ul > li > a {
+    display: block;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+}
+@media (min-width: 768px) {
+  .icon-menu {
+    display: none;
+  }
+}
