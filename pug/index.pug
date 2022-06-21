@@ -8,21 +8,32 @@ html(lang='en')
     link(rel='stylesheet' href='public/css/style.css')
   body
     // header start
-    header.overflow-hidden
+    header
       .container
-        a.icon-menu(href="#") Menu 
-        h1
-          a(href='index.html')  Winny's Protfolio
-        nav
-          ul
-            li
-              a(href='about-us.html') 關於我
-            li
-              a(href='design-list-teach.html') 3D建模作品
-            li
-              a(href='#') 網頁設計作品
-            li
-              a(href='#') 聯絡我
+        .row.flex-space-between
+          h1
+            a(href='index.html')  Winny's Protfolio
+          a.icon-menu(href="#") Menu 
+          nav
+            ul
+              li
+                a(href='about-us.html') 關於我
+              li
+                a(href='design-list-teach.html') 3D建模作品
+                ul.submenu  
+                  li 
+                    a(href="design-list-teach.html") 物件設計
+                  li
+                    a(href="design-list-teach.html") 角色設計 
+              li
+                a(href='#') 網頁設計作品
+                ul.submenu  
+                  li 
+                    a(href="design-work.html") 物件設計
+                  li
+                    a(href="design-work.html") 角色設計 
+              li
+                a(href='#') 聯絡我
     // header end
     img.img-fluid(src='https://picsum.photos/1920/550' alt='')
     // content start

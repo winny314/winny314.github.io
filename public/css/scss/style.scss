@@ -31,27 +31,27 @@ header{
     background-color:#4f8b77;
 }
 
-header>.container>h1{
+header>.container h1{
 
     padding-top: 20px;
     color: rgb(73, 73, 73);
 
 }
-header>.container>h1>a{
+header>.container h1>a{
     color:#ffffff;
 }
 
-header>.container>nav>ul{
+header>.container nav>ul{
     display: flex;
     // justify-content: space-between;
 }
 
-header>.container>nav>ul>li{
+header>.container nav>ul>li{
     margin-right: 30px;
     
 }
 
-header>.container>nav>ul>li>a{
+header>.container nav>ul>li>a{
     line-height: 60px;
     color:#ffffff;
     font-size: 1.2em;
@@ -266,15 +266,18 @@ dd>a{
 
 /*===================================icon-menu=================================== */
 
-// ================================= 小於767px以上執行 start
+// ================================= 小於767px以下執行 start
+.flex-space-between{
+    justify-content: space-between;
+}
 @media(max-width:767px){
     h1{
-        width: 85%;
+        // width: 85%;
         // background-color: #797979;
-        float: left;
+      
     }  
     .icon-menu{
-        float: right;
+       
         width:15%;
         display: block;
         background-color: #b6e0b5;
@@ -285,31 +288,74 @@ dd>a{
         font-weight: bold;
         font-size: 20px;
     }
+    header{
+        position: relative;
+    }
     
-    header>.container>nav{
+    header > .container nav{
         width: 100%;
-        float: left;
-        display: none;    //menu隱藏
+        position: absolute;
+        top:60px;
+        background-color:rgb(133, 133, 133);
+        // display: none;
+        // 需要蓋板的話打開以下程式碼
+        // position: fixed;
+        // top:0px;
+        // height: 100vh;
+        // z-index: 999;
+
+        // 需要從上往下出現導覽時打開以下程式碼
+        // height:0px;
+        // overflow: hidden;
     
     }
-    header>.container>nav.active{
-        display: block;    //menu隱藏
-    
+    nav{
+        // viewport width
+        left:0px;
+        // 這一行等二層選單做完之後再打開
+        //left:-100vw    
+        transition: all .3s;
     }
-      
-    header>.container>nav>ul{
+    // 之後搭配javascript要改寫選取器的寫法
+    .icon-menu:hover + nav{
+        left:0px;
+
+        // 需要從上往下出現導覽時打開以下程式碼
+        // height: 244px;
+    }
+    header > .container nav.active{
         display: block;
     }
-    header>.container>nav> ul >li{
+      
+    header> .container nav >ul{
+        display: block;
+    }
+    header> .container nav > ul >li{
         width: 100%;
         text-align: center;    
+        border-bottom:1px solid #fff;
     }
-    header>.container>nav> ul >li >a{
+    header> .container nav> ul >li >a{
         display: block;    
     }
-    .overflow-hidden{
-        overflow: hidden;
-    } 
+    .submenu{
+        display: none;
+        background-color: rgb(182, 182, 182);
+    }
+    header> .container nav> ul >li:hover .submenu{
+        display: block;    
+    }
+    .submenu>li{
+        line-height: 60px;
+        border-bottom:0.5px solid rgb(255, 255, 255);
+    }
+    .submenu>li>a{
+        color: #222222;
+        display: block;
+    }
+    // .overflow-hidden{
+    //     overflow: hidden;
+    // } 
   
 }  //=================================== max-width 767 end
 
