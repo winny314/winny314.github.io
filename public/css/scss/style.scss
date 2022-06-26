@@ -32,8 +32,7 @@ header{
 }
 
 header>.container h1{
-
-    padding-top: 20px;
+    line-height: 60px;
     color: rgb(73, 73, 73);
 
 }
@@ -55,64 +54,67 @@ header>.container nav>ul>li>a{
     line-height: 60px;
     color:#ffffff;
     font-size: 1.2em;
-   letter-spacing: 2px;
+    letter-spacing: 2px;
 }
 
-@media (min-width:768px) {
-    header>.container nav{
-        width: 100%;
+@media (min-width: 768px) {
+    // header > .container nav {
+    //   width: 100%;
+    // }
+  
+    header > .container nav > ul > li {
+      position: relative;
     }
-    header>.container nav>ul>li{
-        position: relative;
+  
+    header > .container nav > ul > li:hover .submenu {
+        display: block;
     }
-    header>.container nav>ul>li:hover .submenu{
-         display: block;
+    header > .container nav > ul > li {
+        margin-left: 20px;
     }
-    header{
-        position: relative;
+    .submenu {
+      position: absolute;
+      background-color: #bdb3a7;
+      width: 160%;
+      left: 0px;
+      top: 60px;
+      padding: 10px;
+      display: none;
     }
-    header > .container h1{
-        position: absolute;
-        left: 50%;
-        // margin-left: -102px; 減掉LOGO自己的長度一半，等同前面的效果
-        transform: translate(-50%);     
-        background-color: #222222;
-        line-height: 60px;
-        padding: 0;
+  
+    .submenu > li {
+      line-height: 40px;
+    }
+  
+    .submenu > li > a {
+      color: black;
+    }
+    //======================= LOGO置中========================
+    // header {
+        //   position: relative;
+        // }
         
-    }
-    header> nav{
-        display: flex;
-        justify-content: center;
-    }
-    header>.container nav>ul>li{
-        margin-left: 20Px;
-        // margin-right: 20px;
-    }
-    header>.container nav>ul>li:nth-child(2){
-        margin-right: 300px;
-    }
-    // 置中LOGO end
-    .submenu{
-        position: absolute;
-        background-color:rgb(133, 133, 133);
-        width: 160%;
-        left:0px;
-        top:60px;
-        padding: 10px;
-        display: none;
-
-    }
-    .submenu>li{
-        line-height: 40px;
-
-    }
-    .submenu>li>a{
-        color: #222222;
-    }
-}
-// main-width 768 end
-// ==============================
+        // header > .container h1 {
+    //   position: absolute;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   line-height: 60px;
+    //   padding-top: 0px;
+    // }
+  
+    // header nav {
+    //   display: flex;
+    //   justify-content: center;
+    // }
+    // header > .container nav > ul > li:nth-child(2) {
+    //   margin-right: 250px;
+    // }
+  
+    
+  
+  }
+// // main-width 768 end
+// // ==============================
 
 
 
@@ -318,6 +320,10 @@ dd>a{
     left: -25px;
     top: -25px;
     background-color: rgb(73, 212, 55);
+    // 下方正中間
+    // bottom:-25px;
+    // left:50%;
+    // margin-left: -25px;
   }
 
 /*===================================icon-menu=================================== */
@@ -327,11 +333,11 @@ dd>a{
     justify-content: space-between;
 }
 @media(max-width:767px){
-    h1{
-        // width: 85%;
-        // background-color: #797979;
+    // h1{
+    //     // width: 85%;
+    //     // background-color: #797979;
       
-    }  
+    // }  
     .icon-menu{
        
         width:15%;
@@ -410,10 +416,7 @@ dd>a{
         color: #222222;
         display: block;
     }
-    // .overflow-hidden{
-    //     overflow: hidden;
-    // } 
-  
+    
 }  //=================================== max-width 767 end
 
 

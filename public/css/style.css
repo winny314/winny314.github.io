@@ -27,7 +27,7 @@ header {
 }
 
 header > .container h1 {
-  padding-top: 20px;
+  line-height: 60px;
   color: #494949;
 }
 
@@ -51,10 +51,6 @@ header > .container nav > ul > li > a {
 }
 
 @media (min-width: 768px) {
-  header > .container nav {
-    width: 100%;
-  }
-
   header > .container nav > ul > li {
     position: relative;
   }
@@ -63,35 +59,13 @@ header > .container nav > ul > li > a {
     display: block;
   }
 
-  header {
-    position: relative;
-  }
-
-  header > .container h1 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: #222222;
-    line-height: 60px;
-    padding: 0;
-  }
-
-  header > nav {
-    display: flex;
-    justify-content: center;
-  }
-
   header > .container nav > ul > li {
-    margin-left: 20Px;
-  }
-
-  header > .container nav > ul > li:nth-child(2) {
-    margin-right: 300px;
+    margin-left: 20px;
   }
 
   .submenu {
     position: absolute;
-    background-color: #858585;
+    background-color: #bdb3a7;
     width: 160%;
     left: 0px;
     top: 60px;
@@ -104,7 +78,7 @@ header > .container nav > ul > li > a {
   }
 
   .submenu > li > a {
-    color: #222222;
+    color: black;
   }
 }
 .img-fluid {
