@@ -50,6 +50,63 @@ header > .container nav > ul > li > a {
   letter-spacing: 2px;
 }
 
+@media (min-width: 768px) {
+  header > .container nav {
+    width: 100%;
+  }
+
+  header > .container nav > ul > li {
+    position: relative;
+  }
+
+  header > .container nav > ul > li:hover .submenu {
+    display: block;
+  }
+
+  header {
+    position: relative;
+  }
+
+  header > .container h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #222222;
+    line-height: 60px;
+    padding: 0;
+  }
+
+  header > nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  header > .container nav > ul > li {
+    margin-left: 20Px;
+  }
+
+  header > .container nav > ul > li:nth-child(2) {
+    margin-right: 300px;
+  }
+
+  .submenu {
+    position: absolute;
+    background-color: #858585;
+    width: 160%;
+    left: 0px;
+    top: 60px;
+    padding: 10px;
+    display: none;
+  }
+
+  .submenu > li {
+    line-height: 40px;
+  }
+
+  .submenu > li > a {
+    color: #222222;
+  }
+}
 .img-fluid {
   width: 100%;
 }
@@ -455,6 +512,7 @@ dd > a {
 
   nav {
     left: 0px;
+    left: -100vw;
     transition: all 0.3s;
   }
 

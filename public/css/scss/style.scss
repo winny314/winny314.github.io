@@ -58,6 +58,62 @@ header>.container nav>ul>li>a{
    letter-spacing: 2px;
 }
 
+@media (min-width:768px) {
+    header>.container nav{
+        width: 100%;
+    }
+    header>.container nav>ul>li{
+        position: relative;
+    }
+    header>.container nav>ul>li:hover .submenu{
+         display: block;
+    }
+    header{
+        position: relative;
+    }
+    header > .container h1{
+        position: absolute;
+        left: 50%;
+        // margin-left: -102px; 減掉LOGO自己的長度一半，等同前面的效果
+        transform: translate(-50%);     
+        background-color: #222222;
+        line-height: 60px;
+        padding: 0;
+        
+    }
+    header> nav{
+        display: flex;
+        justify-content: center;
+    }
+    header>.container nav>ul>li{
+        margin-left: 20Px;
+        // margin-right: 20px;
+    }
+    header>.container nav>ul>li:nth-child(2){
+        margin-right: 300px;
+    }
+    // 置中LOGO end
+    .submenu{
+        position: absolute;
+        background-color:rgb(133, 133, 133);
+        width: 160%;
+        left:0px;
+        top:60px;
+        padding: 10px;
+        display: none;
+
+    }
+    .submenu>li{
+        line-height: 40px;
+
+    }
+    .submenu>li>a{
+        color: #222222;
+    }
+}
+// main-width 768 end
+// ==============================
+
 
 
 
@@ -313,8 +369,9 @@ dd>a{
         // viewport width
         left:0px;
         // 這一行等二層選單做完之後再打開
-        //left:-100vw    
-        transition: all .3s;
+        left:-100vw;
+        transition: all 0.3s;    
+        
     }
     // 之後搭配javascript要改寫選取器的寫法
     .icon-menu:hover + nav{
