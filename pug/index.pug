@@ -4,128 +4,157 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title Winny's Protfolio
+    title 古雲國樂
     link(rel='stylesheet' href='public/css/style.css')
   body
     // header start
     header
       .container
-        .row.flex-space-between
+        .row.flex-start
           h1
-            a(href='index.html')  Winny's Protfolio
+            a(href='index.html')
+              img(src="public/images/logo_KU_YUN.svg" alt="")
           a#btn-nav-toggle.icon-menu(href="#") Menu
 
           nav#primary-navigation
             ul
               li
-                a(href='about-us.html') 關於我
-              li
-                a(href='design-list-teach.html') 3D建模作品
+                a(href='about-us.html') 彈撥樂
                 ul.submenu  
                   li 
-                    a(href="design-list-teach.html") 物件設計
+                    a(href="design-list-teach.html") 琵琶
                   li
-                    a(href="design-list-teach.html") 角色設計 
+                    a(href="design-list-teach.html") 箏
               li
-                a(href='#') 網頁設計作品
+                a(href='design-list-teach.html') 吹管樂
                 ul.submenu  
                   li 
-                    a(href="design-work.html") 物件設計
+                    a(href="design-list-teach.html") 蕭
                   li
-                    a(href="design-work.html") 角色設計 
+                    a(href="design-list-teach.html") 笛
               li
-                a(href='#') 聯絡我
+                a(href='#') 拉弦樂
+                ul.submenu  
+                  li 
+                    a(href="design-work.html") 二胡
+                  li
+                    a(href="design-work.html") 高胡 
+              li
+                a(href='#') 樂器配件
+                ul.submenu 
+                  li 
+                    a(href="design-work.html") 彈撥配件
+                  li
+                    a(href="design-work.html") 吹管配件 
+              li
+                a(href='#') 門市資訊
     // header end
-    img.img-fluid(src='https://picsum.photos/1920/550' alt='')
+    img.img-fluid(src='https://picsum.photos/1920/360' alt='')
     // content start
     // .container>h1{最新作品一覽}+.row>.col-md-4*6>img.img-fluid+p.title>a[href="#"]{標題$}^p.description{內容}
     // .col-md-4*7>a>img[src="https://baconmockup.com/300/300" class="img-fluid img-rounded"]^p.title.text-center>a{作品標題$}^p.date.text-center{2022-6-15}
     .container
-      h2.text-center 最新作品一覽
+      h2.text-center-h2 最新消息
+      img.img-fluid(src='https://picsum.photos/1140/122' alt='')
+      h2.text-center-h2 精選商品
       .row
-        .col-6.col-md-4.col-lg-3
+        .col-6.col-md-4.col-lg-4
           a(href='')
-            img.img-fluid.img-rounded(src='public/images/model01.jpg' alt='')
+            img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
           p.title.text-center
             a(href='') 發條王子
           p.date.text-center 2022-6-15
-        .col-6.col-md-4.col-lg-3
+        .col-6.col-md-4.col-lg-4
           a(href='')
-            img.img-fluid.img-rounded(src='public/images/model02.jpg' alt='')
+            img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
           p.title.text-center
             a(href='') 發條老鼠
           p.date.text-center 2022-6-15
-        .col-6.col-md-4.col-lg-3
+        .col-6.col-md-4.col-lg-4
           a(href='')
-            img.img-fluid.img-rounded(src='public/images/model03.jpg' alt='')
+            img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
           p.title.text-center
             a(href='') 發條熊
           p.date.text-center 2022-6-15
-        .col-6.col-md-4.col-lg-3
+        .col-6.col-md-4.col-lg-4
           a(href='')
-            img.img-fluid.img-rounded(src='public/images/c03-1.jpg' alt='')
+            img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
           p.title.text-center
             a(href='') 能量發條
           p.date.text-center 2022-6-15
-        .col-6.col-md-4.col-lg-3
+        .col-6.col-md-4.col-lg-4
           a(href='')
-            img.img-fluid.img-rounded(src='public/images/c02-3.jpg' alt='')
+            img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
           p.title.text-center
-            a(href='') 邪惡發條
-          a(href='')
-            p.date.text-center 2022-6-15
-        a(href='')
-        .col-6.col-md-4.col-lg-3
-          a(href='')
-          a(href='')
-            img.img-fluid.img-rounded(src='public/images/c01-3.jpg' alt='')
-          p.title.text-center
-            a(href='') 金色發條
+            a(href='') 能量發條
           p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-4
+          a(href='')
+            img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
+          p.title.text-center
+            a(href='') 能量發條
+          p.date.text-center 2022-6-15  
+      
+      h2.text-center-h2 最新上架
+      .row
+        .col-6.col-md-4.col-lg-4
+          a(href='')
+            img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
+          p.title.text-center
+            a(href='') 發條王子
+          p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-4
+          a(href='')
+            img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
+          p.title.text-center
+            a(href='') 發條老鼠
+          p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-4
+          a(href='')
+            img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
+          p.title.text-center
+            a(href='') 發條熊
+          p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-4
+          a(href='')
+            img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
+          p.title.text-center
+            a(href='') 能量發條
+          p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-4
+          a(href='')
+            img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
+          p.title.text-center
+            a(href='') 能量發條
+          p.date.text-center 2022-6-15
+        .col-6.col-md-4.col-lg-4
+          a(href='')
+            img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
+          p.title.text-center
+            a(href='') 能量發條
+          p.date.text-center 2022-6-15  
     // content end
     // footer>.container>.row>dl.col-md-3*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright}
   footer
       .container
-        .row
-          dl.col-12.col-md-3
-            dt 標題01
-            dd
-              a(href='#') 項目01
-            dd
-              a(href='#') 項目02
-            dd
-              a(href='#') 項目03
-            dd
-              a(href='#') 項目04
-          dl.col-12.col-md-3
-            dt 標題02
-            dd
-              a(href='#') 項目01
-            dd
-              a(href='#') 項目02
-            dd
-              a(href='#') 項目03
-            dd
-              a(href='#') 項目04
-          dl.col-12.col-md-3
-            dt 標題03
-            dd
-              a(href='#') 項目01
-            dd
-              a(href='#') 項目02
-            dd
-              a(href='#') 項目03
-            dd
-              a(href='#') 項目04
-          dl.col-12.col-md-3
-            dt 標題04
-            dd
-              a(href='#') 項目01
-            dd
-              a(href='#') 項目02
-            dd
-              a(href='#') 項目03
-            dd
-              a(href='#') 項目04
-        p.copyright.text-center 本站僅供學習使用，不用於商業用途  
+        .row.space-between
+          nav
+            ul
+              li
+                a(href="") 
+                  img.img-fluid.img-rounded(src="public/images/icon_fb.svg", alt="")
+              li
+                a(href="")
+                  img.img-fluid.img-rounded(src="public/images/icon_ig.svg", alt="") 
+              li
+                a(href="") 
+                  img.img-fluid.img-rounded(src="public/images/icon_yt.svg", alt="")
+              li
+                a(href="") 
+                  img.img-fluid.img-rounded(src="public/images/icon_line.svg", alt="")
+              li
+                a(href="") 
+                  img.img-fluid.img-rounded(src="public/images/icon_twitter.svg", alt="")
+            h6.text-center 聯絡我們
+            p.copyright.text-center 本站僅供學習使用，不用於商業用途  
   script(src="public/js/script.js")

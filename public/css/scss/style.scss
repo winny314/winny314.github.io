@@ -27,35 +27,51 @@ body{
 // 頁首
 // ============================  ===========================
 
-header{
-    background-color:#4f8b77;
+header { 
+    background-color: #fff;
+    height: 100px;
+    box-shadow:0px 0px 6px 0px #9C5156;
+   
+}
+  
+header > .container h1 {
+    padding-top: 15px;
+    color: #363230;
 }
 
-header>.container h1{
-    line-height: 60px;
-    color: rgb(73, 73, 73);
-
-}
 header>.container h1>a{
-    color:#ffffff;
+    color: #363230;
 }
 
-header>.container nav>ul{
+header > .container h1 > a > img{
+    height:70px;  
+}
+
+header>.container nav > ul{
     display: flex;
     // justify-content: space-between;
 }
 
-header>.container nav>ul>li{
-    margin-right: 30px;
+header>.container nav > ul > li{
+    margin-right: 10px;
     
 }
 
+header > .container nav > ul > li > a:first-child {
+    margin-left: 20px;
+}
+
 header>.container nav>ul>li>a{
+    position:relative;
+    top: 40px;
     line-height: 60px;
-    color:#ffffff;
+    display: block;
+    color: #363230;
     font-size: 1.2em;
     letter-spacing: 2px;
+    margin-bottom: 50px;
 }
+
 
 @media (min-width: 768px) {
     // header > .container nav {
@@ -115,7 +131,7 @@ header>.container nav>ul>li>a{
   
     
   
-  }
+}
 // // main-width 768 end
 // // ==============================
 
@@ -150,7 +166,15 @@ header>.container nav>ul>li>a{
     text-align: center;
 }
 
+.text-center-h2{
+    display: block;
+    text-align: center;
+    border-left: 2px #B79483 solid;
+    border-right: 2px #B79483 solid;
+}
 .text-left{
+    margin: 0;
+    padding: 0;
     text-align: left;
 }
 
@@ -169,20 +193,22 @@ header>.container nav>ul>li>a{
     
 }
 
+// 
+
 
 @for $i from 1 through 12 {
     .col-#{$i}{
         --num: calc(12 / #{$i});
-        width: calc(100% / var(--num) - 30px);
-        margin: 0px 15px 40px 15px;
+        width: calc(100% / var(--num) - 50px);
+        margin: 0px 25px 60px 25px;
     }
 }
 @media (min-width:768px){
     @for $i from 1 through 12 {
         .col-md-#{$i}{
             --num: calc(12 / #{$i});
-            width: calc(100% / var(--num) - 30px);
-            margin: 0px 15px 40px 15px;
+            width: calc(100% / var(--num) - 50px);
+            margin: 0px 25px 60px 25px;
         }
     }
 } // 768px end
@@ -191,8 +217,8 @@ header>.container nav>ul>li>a{
     @for $i from 1 through 12 {
         .col-lg-#{$i}{
             --num: calc(12 / #{$i});
-            width: calc(100% / var(--num) - 30px);
-            margin: 0px 15px 40px 15px;
+            width: calc(100% / var(--num) - 50px);
+            margin: 0px 25px 60px 25px;
         }
     }
 } // 1200px end
@@ -204,7 +230,7 @@ header>.container nav>ul>li>a{
 }
 
 .title a{
-    color: rgb(73, 73, 73);
+    color: #363230;
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -214,30 +240,50 @@ header>.container nav>ul>li>a{
 
 h2{
     font-size: 2em;
-    margin: 60px auto 30px auto;
+    margin: 50px auto 30px auto;
 }
 
 // ============================== ===========================
 // 頁尾區塊
 // ============================== ===========================
-footer{
-    background-color:#4f8b77;
-    padding: 40px 0 40px 0;
+footer {
+    height: 120px;
+    background-color: #DEBEC1;
+    padding: 20px 0 20px 0;
 }
-dt{
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #ffffff;
+footer>.container>.row nav{
+    width: 100%;
 }
+footer>.container>.row ul{
+    display: flex;  
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+footer>.container>.row li{
+    margin:0px 20px 0px 20px;
+}
+footer>.container>.row li>a>img{
+    width: 35px;
+}
+footer>.container>.row nav>p{
+    margin-top: 50px;
+}
+// dt{
+//     font-size: 1.2em;
+//     margin-bottom: 10px;
+//     color: #ffffff;
+// }
 
-dd{
-    margin-bottom: 4px;
+// dd{
+//     margin-bottom: 4px;
 
-}
+// }
 
-dd>a{
-    color: rgb(73, 73, 73);
-}
+// dd>a{
+//     color: #363230;
+// }
 
 
 // ======================
@@ -248,15 +294,15 @@ dd>a{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
-    color: rgb(73, 73, 73) ;
+    color:#363230;
 }
 
 .breadcrumb a{
-    color:  rgb(73, 73, 73);
+    color:  #363230;
     font-size: 18px;
 }
 .bread{
-    color:rgb(73, 73, 73) ;
+    color:#363230;
     margin-left: 15px;
     
 }
@@ -271,9 +317,9 @@ dd>a{
 }
 
 .btn-primary{
-    background-color:rgb(173, 192, 177);
+    background-color:#adc0b1;
     padding: 15px;
-    color: rgb(73, 73, 73);
+    color: #363230;
     display: block;
     margin-bottom: 4px;
     border-radius: 4px;
@@ -281,13 +327,13 @@ dd>a{
 }
 
 .btn-primary:hover{
-    background:rgb(79, 139, 119);
-    color: #fff;
+    background:#4f8b77;
+    color: #363230;
     font-size: 20px;
 }
 
 .text-primary{
-    color:rgb(79, 139, 119);
+    color:#4f8b77;
 
 }
 
@@ -327,31 +373,40 @@ dd>a{
     // bottom:-25px;
     // left:50%;
     // margin-left: -25px;
-  }
+}
 
 /*===================================icon-menu=================================== */
 
 // ================================= 小於767px以下執行 start
-.flex-space-between{
-    justify-content: space-between;
+// .flex-space-between{
+//     justify-content: space-between;
+// }
+.flex-start{
+    justify-content: flex-start;
 }
+  
 @media(max-width:767px){
     // h1{
     //     // width: 85%;
     //     // background-color: #797979;
       
     // }  
-    .icon-menu{       
-        width:15%;
+    .icon-menu {
+        position: relative;
+        right: 0;
+        position:absolute;
+        bottom:0;
+        width: 15%;
         display: block;
         background-color: #b6e0b5;
-        color: rgb(73, 73, 73);
+        color: #363230;
         text-decoration: none;
         line-height: 60px;
         text-align: center;
         font-weight: bold;
         font-size: 20px;
     }
+
     header{
         position: relative;
     }
@@ -359,8 +414,8 @@ dd>a{
     header > .container nav{
         width: 100%;
         position: absolute;
-        top:60px;
-        background-color:rgb(133, 133, 133);
+        top:100px;
+        background-color: #DEBEC1;
         // display: none;
         // 需要蓋板的話打開以下程式碼
         // position: fixed;
@@ -400,14 +455,14 @@ dd>a{
     header> .container nav > ul >li{
         width: 100%;
         text-align: center;    
-        border-bottom:1px solid #fff;
+        border-bottom:1px solid #9C5156;
     }
     header> .container nav> ul >li >a{
         display: block;    
     }
     .submenu{
         display: none;
-        background-color: rgb(182, 182, 182);
+        background-color:#9C5156;
     }
     header> .container nav> ul >li:hover .submenu{
         display: block;    
@@ -416,12 +471,15 @@ dd>a{
         line-height: 60px;
         border-bottom:0.5px solid rgb(255, 255, 255);
     }
-    .submenu>li>a{
-        color: #222222;
+    .submenu > li > a {
+        color: #fff;
         display: block;
     }
     
-}  //=================================== max-width 767 end
+    
+}  
+
+//=================================== max-width 767 end
 
 
 //===================================== 超過768px以上執行 start
@@ -435,10 +493,9 @@ dd>a{
 // from through 從 1 開始到 3
 @for $i from 1 through 10 {
     .fz-#{$i}{
-        font-size: $i*1em;
+        font-size: $i * 1em;
     }
 }
-
 @for $i from 1 through 5 {
     .mb-#{$i}{
         margin-bottom: $i * 1em;

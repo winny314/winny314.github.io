@@ -23,16 +23,22 @@ body {
 }
 
 header {
-  background-color: #4f8b77;
+  background-color: #fff;
+  height: 100px;
+  box-shadow: 0px 0px 6px 0px #9C5156;
 }
 
 header > .container h1 {
-  line-height: 60px;
-  color: #494949;
+  padding-top: 15px;
+  color: #363230;
 }
 
 header > .container h1 > a {
-  color: #ffffff;
+  color: #363230;
+}
+
+header > .container h1 > a > img {
+  height: 70px;
 }
 
 header > .container nav > ul {
@@ -40,14 +46,22 @@ header > .container nav > ul {
 }
 
 header > .container nav > ul > li {
-  margin-right: 30px;
+  margin-right: 10px;
+}
+
+header > .container nav > ul > li > a:first-child {
+  margin-left: 20px;
 }
 
 header > .container nav > ul > li > a {
+  position: relative;
+  top: 40px;
   line-height: 60px;
-  color: #ffffff;
+  display: block;
+  color: #363230;
   font-size: 1.2em;
   letter-spacing: 2px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
@@ -105,7 +119,16 @@ header > .container nav > ul > li > a {
   text-align: center;
 }
 
+.text-center-h2 {
+  display: block;
+  text-align: center;
+  border-left: 2px #B79483 solid;
+  border-right: 2px #B79483 solid;
+}
+
 .text-left {
+  margin: 0;
+  padding: 0;
   text-align: left;
 }
 
@@ -125,220 +148,220 @@ header > .container nav > ul > li > a {
 
 .col-1 {
   --num: calc(12 / 1);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  width: calc(100% / var(--num) - 50px);
+  margin: 0px 25px 60px 25px;
 }
 
 .col-2 {
   --num: calc(12 / 2);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  width: calc(100% / var(--num) - 50px);
+  margin: 0px 25px 60px 25px;
 }
 
 .col-3 {
   --num: calc(12 / 3);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  width: calc(100% / var(--num) - 50px);
+  margin: 0px 25px 60px 25px;
 }
 
 .col-4 {
   --num: calc(12 / 4);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  width: calc(100% / var(--num) - 50px);
+  margin: 0px 25px 60px 25px;
 }
 
 .col-5 {
   --num: calc(12 / 5);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  width: calc(100% / var(--num) - 50px);
+  margin: 0px 25px 60px 25px;
 }
 
 .col-6 {
   --num: calc(12 / 6);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  width: calc(100% / var(--num) - 50px);
+  margin: 0px 25px 60px 25px;
 }
 
 .col-7 {
   --num: calc(12 / 7);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  width: calc(100% / var(--num) - 50px);
+  margin: 0px 25px 60px 25px;
 }
 
 .col-8 {
   --num: calc(12 / 8);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  width: calc(100% / var(--num) - 50px);
+  margin: 0px 25px 60px 25px;
 }
 
 .col-9 {
   --num: calc(12 / 9);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  width: calc(100% / var(--num) - 50px);
+  margin: 0px 25px 60px 25px;
 }
 
 .col-10 {
   --num: calc(12 / 10);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  width: calc(100% / var(--num) - 50px);
+  margin: 0px 25px 60px 25px;
 }
 
 .col-11 {
   --num: calc(12 / 11);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  width: calc(100% / var(--num) - 50px);
+  margin: 0px 25px 60px 25px;
 }
 
 .col-12 {
   --num: calc(12 / 12);
-  width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  width: calc(100% / var(--num) - 50px);
+  margin: 0px 25px 60px 25px;
 }
 
 @media (min-width: 768px) {
   .col-md-1 {
     --num: calc(12 / 1);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-md-2 {
     --num: calc(12 / 2);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-md-3 {
     --num: calc(12 / 3);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-md-4 {
     --num: calc(12 / 4);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-md-5 {
     --num: calc(12 / 5);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-md-6 {
     --num: calc(12 / 6);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-md-7 {
     --num: calc(12 / 7);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-md-8 {
     --num: calc(12 / 8);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-md-9 {
     --num: calc(12 / 9);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-md-10 {
     --num: calc(12 / 10);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-md-11 {
     --num: calc(12 / 11);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-md-12 {
     --num: calc(12 / 12);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 }
 @media (min-width: 1200px) {
   .col-lg-1 {
     --num: calc(12 / 1);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-lg-2 {
     --num: calc(12 / 2);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-lg-3 {
     --num: calc(12 / 3);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-lg-4 {
     --num: calc(12 / 4);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-lg-5 {
     --num: calc(12 / 5);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-lg-6 {
     --num: calc(12 / 6);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-lg-7 {
     --num: calc(12 / 7);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-lg-8 {
     --num: calc(12 / 8);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-lg-9 {
     --num: calc(12 / 9);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-lg-10 {
     --num: calc(12 / 10);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-lg-11 {
     --num: calc(12 / 11);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 
   .col-lg-12 {
     --num: calc(12 / 12);
-    width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    width: calc(100% / var(--num) - 50px);
+    margin: 0px 25px 60px 25px;
   }
 }
 @media (min-width: 768px) {
@@ -347,7 +370,7 @@ header > .container nav > ul > li > a {
   }
 }
 .title a {
-  color: #494949;
+  color: #363230;
   font-size: 1.5em;
   font-weight: 700;
 }
@@ -358,26 +381,36 @@ header > .container nav > ul > li > a {
 
 h2 {
   font-size: 2em;
-  margin: 60px auto 30px auto;
+  margin: 50px auto 30px auto;
 }
 
 footer {
-  background-color: #4f8b77;
-  padding: 40px 0 40px 0;
+  height: 120px;
+  background-color: #DEBEC1;
+  padding: 20px 0 20px 0;
 }
 
-dt {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  color: #ffffff;
+footer > .container > .row nav {
+  width: 100%;
 }
 
-dd {
-  margin-bottom: 4px;
+footer > .container > .row ul {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-dd > a {
-  color: #494949;
+footer > .container > .row li {
+  margin: 0px 20px 0px 20px;
+}
+
+footer > .container > .row li > a > img {
+  width: 35px;
+}
+
+footer > .container > .row nav > p {
+  margin-top: 50px;
 }
 
 .breadcrumb {
@@ -385,16 +418,16 @@ dd > a {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
-  color: #494949;
+  color: #363230;
 }
 
 .breadcrumb a {
-  color: #494949;
+  color: #363230;
   font-size: 18px;
 }
 
 .bread {
-  color: #494949;
+  color: #363230;
   margin-left: 15px;
 }
 
@@ -409,7 +442,7 @@ dd > a {
 .btn-primary {
   background-color: #adc0b1;
   padding: 15px;
-  color: #494949;
+  color: #363230;
   display: block;
   margin-bottom: 4px;
   border-radius: 4px;
@@ -418,7 +451,7 @@ dd > a {
 
 .btn-primary:hover {
   background: #4f8b77;
-  color: #fff;
+  color: #363230;
   font-size: 20px;
 }
 
@@ -460,16 +493,20 @@ dd > a {
 }
 
 /*===================================icon-menu=================================== */
-.flex-space-between {
-  justify-content: space-between;
+.flex-start {
+  justify-content: flex-start;
 }
 
 @media (max-width: 767px) {
   .icon-menu {
+    position: relative;
+    right: 0;
+    position: absolute;
+    bottom: 0;
     width: 15%;
     display: block;
     background-color: #b6e0b5;
-    color: #494949;
+    color: #363230;
     text-decoration: none;
     line-height: 60px;
     text-align: center;
@@ -484,8 +521,8 @@ dd > a {
   header > .container nav {
     width: 100%;
     position: absolute;
-    top: 60px;
-    background-color: #858585;
+    top: 100px;
+    background-color: #DEBEC1;
   }
 
   nav {
@@ -509,7 +546,7 @@ dd > a {
   header > .container nav > ul > li {
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #9C5156;
   }
 
   header > .container nav > ul > li > a {
@@ -518,7 +555,7 @@ dd > a {
 
   .submenu {
     display: none;
-    background-color: #b6b6b6;
+    background-color: #9C5156;
   }
 
   header > .container nav > ul > li:hover .submenu {
@@ -531,7 +568,7 @@ dd > a {
   }
 
   .submenu > li > a {
-    color: #222222;
+    color: #fff;
     display: block;
   }
 }
