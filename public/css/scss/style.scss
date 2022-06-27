@@ -1,4 +1,4 @@
-$primary-color:rgb(27, 134, 23);
+$primary-color:#9C5156;
 
 *{
     margin: 0;
@@ -88,6 +88,9 @@ header>.container nav>ul>li>a{
   
     .submenu > li > a {
       color: black;
+    }
+    .submenu > li > a > img{
+        width: 50%;
     }
     //======================= LOGO置中========================
     // header {
@@ -338,8 +341,7 @@ dd>a{
     //     // background-color: #797979;
       
     // }  
-    .icon-menu{
-       
+    .icon-menu{       
         width:15%;
         display: block;
         background-color: #b6e0b5;
@@ -380,12 +382,14 @@ dd>a{
         
     }
     // 之後搭配javascript要改寫選取器的寫法
-    .icon-menu:hover + nav{
+    nav.active{
+
         left:0px;
 
         // 需要從上往下出現導覽時打開以下程式碼
         // height: 244px;
     }
+    
     header > .container nav.active{
         display: block;
     }

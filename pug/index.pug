@@ -13,8 +13,9 @@ html(lang='en')
         .row.flex-space-between
           h1
             a(href='index.html')  Winny's Protfolio
-          a.icon-menu(href="#") Menu 
-          nav
+          a#btn-nav-toggle.icon-menu(href="#") Menu
+
+          nav#primary-navigation
             ul
               li
                 a(href='about-us.html') 關於我
@@ -127,3 +128,4 @@ html(lang='en')
             dd
               a(href='#') 項目04
         p.copyright.text-center 本站僅供學習使用，不用於商業用途  
+  script(src="public/js/script.js")

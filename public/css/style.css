@@ -80,6 +80,10 @@ header > .container nav > ul > li > a {
   .submenu > li > a {
     color: black;
   }
+
+  .submenu > li > a > img {
+    width: 50%;
+  }
 }
 .img-fluid {
   width: 100%;
@@ -349,7 +353,7 @@ header > .container nav > ul > li > a {
 }
 
 .date {
-  color: #1b8617;
+  color: #9C5156;
 }
 
 h2 {
@@ -490,7 +494,7 @@ dd > a {
     transition: all 0.3s;
   }
 
-  .icon-menu:hover + nav {
+  nav.active {
     left: 0px;
   }
 
