@@ -53,20 +53,22 @@ header>.container nav > ul{
 }
 
 header>.container nav > ul > li{
-    margin-right: 10px;
+    margin-right: 5px;
+    
     
 }
 
 header > .container nav > ul > li > a:first-child {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 header>.container nav>ul>li>a{
     position:relative;
-    top: 40px;
+    top: 33px;
     line-height: 60px;
     display: block;
     color: #363230;
+    font-weight: bold;
     font-size: 1.2em;
     letter-spacing: 2px;
     margin-bottom: 50px;
@@ -81,20 +83,25 @@ header>.container nav>ul>li>a{
     header > .container nav > ul > li {
       position: relative;
     }
+    header > .container nav > ul > li > a:hover {
+        color:#9C5156;
+        font-weight: bold;
+      }
   
     header > .container nav > ul > li:hover .submenu {
         display: block;
     }
     header > .container nav > ul > li {
-        margin-left: 20px;
+        margin-left: 5px;
     }
     .submenu {
       position: absolute;
-      background-color: #bdb3a7;
-      width: 160%;
+      background-color: #fff;
+      box-shadow:3px 3px 5px #C29498;
+      width: 120%;
       left: 0px;
-      top: 60px;
-      padding: 10px;
+      top: 80px;
+      padding:10px 10px;
       display: none;
     }
   
@@ -103,8 +110,16 @@ header>.container nav>ul>li>a{
     }
   
     .submenu > li > a {
-      color: black;
+        display: block;
+        color: black;
     }
+    .submenu > li > a:hover {
+        color:#9C5156;
+        font-weight: bold;
+        font-size: 18px;
+        font-size: 1.2em;
+    }
+
     .submenu > li > a > img{
         width: 50%;
     }
