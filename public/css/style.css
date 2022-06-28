@@ -26,6 +26,7 @@ header {
   background-color: #fff;
   height: 100px;
   box-shadow: 0px 0px 6px 0px #9C5156;
+  position: relative;
 }
 
 header > .container h1 {
@@ -45,12 +46,19 @@ header > .container nav > ul {
   display: flex;
 }
 
-header > .container nav > ul > li {
-  margin-right: 5px;
+header > .container nav > ul > li > a:first-child {
+  margin-left: 20px;
 }
 
-header > .container nav > ul > li > a:first-child {
-  margin-left: 10px;
+.pull-up {
+  position: relative;
+  top: -110px;
+  left: 90%;
+}
+
+.icon-size {
+  padding: 0px 10px;
+  height: 20px;
 }
 
 header > .container nav > ul > li > a {
@@ -60,7 +68,7 @@ header > .container nav > ul > li > a {
   display: block;
   color: #363230;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
   letter-spacing: 2px;
   margin-bottom: 50px;
 }
@@ -68,6 +76,7 @@ header > .container nav > ul > li > a {
 @media (min-width: 768px) {
   header > .container nav > ul > li {
     position: relative;
+    padding-left: 5px;
   }
 
   header > .container nav > ul > li > a:hover {
@@ -79,16 +88,12 @@ header > .container nav > ul > li > a {
     display: block;
   }
 
-  header > .container nav > ul > li {
-    margin-left: 5px;
-  }
-
   .submenu {
     position: absolute;
     background-color: #fff;
     box-shadow: 3px 3px 5px #C29498;
     width: 120%;
-    left: 0px;
+    left: 35px;
     top: 80px;
     padding: 10px 10px;
     display: none;
@@ -139,6 +144,7 @@ header > .container nav > ul > li > a {
   text-align: center;
   border-left: 2px #B79483 solid;
   border-right: 2px #B79483 solid;
+  font-size: 24px;
 }
 
 .text-left {
@@ -165,72 +171,84 @@ header > .container nav > ul > li > a {
   --num: calc(12 / 1);
   width: calc(100% / var(--num) - 50px);
   margin: 0px 25px 60px 25px;
+  position: relative;
 }
 
 .col-2 {
   --num: calc(12 / 2);
   width: calc(100% / var(--num) - 50px);
   margin: 0px 25px 60px 25px;
+  position: relative;
 }
 
 .col-3 {
   --num: calc(12 / 3);
   width: calc(100% / var(--num) - 50px);
   margin: 0px 25px 60px 25px;
+  position: relative;
 }
 
 .col-4 {
   --num: calc(12 / 4);
   width: calc(100% / var(--num) - 50px);
   margin: 0px 25px 60px 25px;
+  position: relative;
 }
 
 .col-5 {
   --num: calc(12 / 5);
   width: calc(100% / var(--num) - 50px);
   margin: 0px 25px 60px 25px;
+  position: relative;
 }
 
 .col-6 {
   --num: calc(12 / 6);
   width: calc(100% / var(--num) - 50px);
   margin: 0px 25px 60px 25px;
+  position: relative;
 }
 
 .col-7 {
   --num: calc(12 / 7);
   width: calc(100% / var(--num) - 50px);
   margin: 0px 25px 60px 25px;
+  position: relative;
 }
 
 .col-8 {
   --num: calc(12 / 8);
   width: calc(100% / var(--num) - 50px);
   margin: 0px 25px 60px 25px;
+  position: relative;
 }
 
 .col-9 {
   --num: calc(12 / 9);
   width: calc(100% / var(--num) - 50px);
   margin: 0px 25px 60px 25px;
+  position: relative;
 }
 
 .col-10 {
   --num: calc(12 / 10);
   width: calc(100% / var(--num) - 50px);
   margin: 0px 25px 60px 25px;
+  position: relative;
 }
 
 .col-11 {
   --num: calc(12 / 11);
   width: calc(100% / var(--num) - 50px);
   margin: 0px 25px 60px 25px;
+  position: relative;
 }
 
 .col-12 {
   --num: calc(12 / 12);
   width: calc(100% / var(--num) - 50px);
   margin: 0px 25px 60px 25px;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -385,13 +403,32 @@ header > .container nav > ul > li > a {
   }
 }
 .title a {
+  display: block;
   color: #363230;
-  font-size: 1.5em;
+  font-size: 18px;
   font-weight: 700;
+  margin-top: 10px;
 }
 
-.date {
-  color: #9C5156;
+.price {
+  color: #B79483;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.fill-like {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 20px;
+}
+
+.icon-tag {
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  width: 40px;
 }
 
 h2 {
@@ -400,13 +437,25 @@ h2 {
 }
 
 footer {
-  height: 120px;
+  height: 180px;
   background-color: #DEBEC1;
   padding: 20px 0 20px 0;
 }
 
 footer > .container > .row nav {
   width: 100%;
+}
+
+.text-footer {
+  margin-top: 70px;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.border-left {
+  display: block;
+  color: #363230;
 }
 
 footer > .container > .row ul {
@@ -417,7 +466,7 @@ footer > .container > .row ul {
 }
 
 footer > .container > .row li {
-  margin: 0px 20px 0px 20px;
+  margin: 30px 20px 0px 20px;
 }
 
 footer > .container > .row li > a > img {
@@ -425,7 +474,7 @@ footer > .container > .row li > a > img {
 }
 
 footer > .container > .row nav > p {
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .breadcrumb {
@@ -513,12 +562,17 @@ footer > .container > .row nav > p {
 }
 
 @media (max-width: 767px) {
+  .icon-position {
+    display: block;
+    width: 5%;
+  }
+
   .icon-menu {
     position: relative;
     right: 0;
     position: absolute;
     bottom: 0;
-    width: 15%;
+    width: 10%;
     display: block;
     background-color: #b6e0b5;
     color: #363230;
@@ -585,6 +639,35 @@ footer > .container > .row nav > p {
   .submenu > li > a {
     color: #fff;
     display: block;
+  }
+
+  .title a {
+    display: block;
+    color: #363230;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 8px;
+  }
+
+  .price {
+    color: #B79483;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  .fill-like {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 15px;
+  }
+
+  .icon-tag {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    width: 30px;
   }
 }
 @media (min-width: 768px) {

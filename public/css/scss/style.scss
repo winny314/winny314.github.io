@@ -31,6 +31,7 @@ header {
     background-color: #fff;
     height: 100px;
     box-shadow:0px 0px 6px 0px #9C5156;
+    position: relative;
    
 }
   
@@ -52,16 +53,30 @@ header>.container nav > ul{
     // justify-content: space-between;
 }
 
-header>.container nav > ul > li{
-    margin-right: 5px;
+// header>.container nav > ul > li{
+//     margin-right: 5px;
     
     
-}
+// }
 
 header > .container nav > ul > li > a:first-child {
-    margin-left: 10px;
+    margin-left: 20px;
 }
+// .pull-right{
+//     // margin-left: 20px;
+// }
 
+
+.pull-up {      
+    position: relative;
+    top:-110px;
+    left:90%;    
+    
+}
+.icon-size{
+    padding:0px 10px;
+    height: 20px;
+}
 header>.container nav>ul>li>a{
     position:relative;
     top: 33px;
@@ -69,7 +84,7 @@ header>.container nav>ul>li>a{
     display: block;
     color: #363230;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
     letter-spacing: 2px;
     margin-bottom: 50px;
 }
@@ -82,28 +97,29 @@ header>.container nav>ul>li>a{
   
     header > .container nav > ul > li {
       position: relative;
+      padding-left: 5px;
     }
     header > .container nav > ul > li > a:hover {
         color:#9C5156;
         font-weight: bold;
-      }
+    }
   
     header > .container nav > ul > li:hover .submenu {
         display: block;
     }
-    header > .container nav > ul > li {
-        margin-left: 5px;
-    }
+
     .submenu {
       position: absolute;
       background-color: #fff;
       box-shadow:3px 3px 5px #C29498;
       width: 120%;
-      left: 0px;
+      left: 35px;    //   2層選單的左右位置
       top: 80px;
       padding:10px 10px;
       display: none;
     }
+
+ 
   
     .submenu > li {
       line-height: 40px;
@@ -118,6 +134,7 @@ header>.container nav>ul>li>a{
         font-weight: bold;
         font-size: 18px;
         font-size: 1.2em;
+       
     }
 
     .submenu > li > a > img{
@@ -186,11 +203,14 @@ header>.container nav>ul>li>a{
     text-align: center;
     border-left: 2px #B79483 solid;
     border-right: 2px #B79483 solid;
+    font-size: 24px;
 }
 .text-left{
     margin: 0;
     padding: 0;
     text-align: left;
+   
+    
 }
 
 .text-right{
@@ -216,6 +236,7 @@ header>.container nav>ul>li>a{
         --num: calc(12 / #{$i});
         width: calc(100% / var(--num) - 50px);
         margin: 0px 25px 60px 25px;
+        position: relative;
     }
 }
 @media (min-width:768px){
@@ -245,12 +266,31 @@ header>.container nav>ul>li>a{
 }
 
 .title a{
+    display: block;
     color: #363230;
-    font-size: 1.5em;
+    font-size: 18px;
     font-weight: 700;
+    margin-top:10px;
+   
+        
 }
-.date{
-    color: $primary-color;
+.price{
+    color:#B79483;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:5px;
+}
+.fill-like{
+    position: absolute;
+    bottom:2px;
+    right:2px;
+    width: 20px;
+}
+.icon-tag{
+    position: absolute;
+    top:-10px;
+    left:15px;
+    width: 40px;
 }
 
 h2{
@@ -262,13 +302,29 @@ h2{
 // 頁尾區塊
 // ============================== ===========================
 footer {
-    height: 120px;
+    height: 180px;
     background-color: #DEBEC1;
     padding: 20px 0 20px 0;
 }
 footer>.container>.row nav{
     width: 100%;
 }
+.text-footer{
+    margin-top: 70px;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: 500;
+
+    
+    
+}
+.border-left{
+    display: block;
+    color: #363230;
+    
+}
+
+
 footer>.container>.row ul{
     display: flex;  
     position: absolute;
@@ -277,13 +333,13 @@ footer>.container>.row ul{
     
 }
 footer>.container>.row li{
-    margin:0px 20px 0px 20px;
+    margin:30px 20px 0px 20px;
 }
 footer>.container>.row li>a>img{
     width: 35px;
 }
 footer>.container>.row nav>p{
-    margin-top: 50px;
+    margin-top: 150px;
 }
 // dt{
 //     font-size: 1.2em;
@@ -398,6 +454,7 @@ footer>.container>.row nav>p{
 // }
 .flex-start{
     justify-content: flex-start;
+    
 }
   
 @media(max-width:767px){
@@ -405,13 +462,17 @@ footer>.container>.row nav>p{
     //     // width: 85%;
     //     // background-color: #797979;
       
-    // }  
+    // } 
+    .icon-position{
+        display: block;
+        width: 5%;
+    } 
     .icon-menu {
         position: relative;
         right: 0;
         position:absolute;
         bottom:0;
-        width: 15%;
+        width: 10%;
         display: block;
         background-color: #b6e0b5;
         color: #363230;
@@ -421,6 +482,8 @@ footer>.container>.row nav>p{
         font-weight: bold;
         font-size: 20px;
     }
+   
+    
 
     header{
         position: relative;
@@ -490,7 +553,34 @@ footer>.container>.row nav>p{
         color: #fff;
         display: block;
     }
-    
+    .title a{
+        display: block;
+        color: #363230;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top:8px;
+       
+            
+    }
+    .price{
+        color:#B79483;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top:5px;
+    }
+    .fill-like{
+        position: absolute;
+        bottom:2px;
+        right:2px;
+        width: 15px;
+    }
+    .icon-tag{
+        position: absolute;
+        top:-5px;
+        left:10px;
+        width: 30px;
+    }
+  
     
 }  
 
