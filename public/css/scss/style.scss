@@ -205,6 +205,12 @@ header>.container nav>ul>li>a{
     border-right: 2px #B79483 solid;
     font-size: 24px;
 }
+.text-center-h2::before{
+    
+}
+.text-center-h2::after{
+    
+}
 .text-left{
     margin: 0;
     padding: 0;
@@ -310,7 +316,8 @@ footer>.container>.row nav{
     width: 100%;
 }
 .text-footer{
-    margin-top: 70px;
+    margin-top: 100px;
+    margin: auto;
     line-height: 20px;
     font-size: 18px;
     font-weight: 500;
@@ -319,7 +326,6 @@ footer>.container>.row nav{
     
 }
 .border-left{
-    display: block;
     color: #363230;
     
 }

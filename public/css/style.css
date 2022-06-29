@@ -447,14 +447,14 @@ footer > .container > .row nav {
 }
 
 .text-footer {
-  margin-top: 70px;
+  margin-top: 100px;
+  margin: auto;
   line-height: 20px;
   font-size: 18px;
   font-weight: 500;
 }
 
 .border-left {
-  display: block;
   color: #363230;
 }
 
