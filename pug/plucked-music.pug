@@ -1,0 +1,143 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title 古雲國樂|彈撥
+    link(rel='stylesheet' href='public/css/style.css')
+  body
+    // header start
+    header
+      .container
+        .row.flex-start
+          h1
+            a(href='index.html')
+              img(src="public/images/logo_KU_YUN.svg" alt="")
+          a#btn-nav-toggle.icon-menu(href="#") Menu
+
+          nav#primary-navigation
+            ul
+              li
+                a(href='about-us.html') 彈撥樂
+                ul.submenu  
+                  li 
+                    a(href="design-list-teach.html") 琵琶
+                  li
+                    a(href="design-list-teach.html") 箏
+              li
+                a(href='design-list-teach.html') 吹管樂
+                ul.submenu  
+                  li 
+                    a(href="design-list-teach.html") 蕭
+                  li
+                    a(href="design-list-teach.html") 笛
+              li
+                a(href='#') 拉弦樂
+                ul.submenu  
+                  li 
+                    a(href="design-work.html") 二胡
+                  li
+                    a(href="design-work.html") 高胡 
+              li
+                a(href='#') 樂器配件
+                ul.submenu 
+                  li 
+                    a(href="design-work.html") 彈撥配件
+                  li
+                    a(href="design-work.html") 吹管配件 
+              li
+                a(href='#') 門市資訊
+              li 
+                a(href='#') 
+                  img.icon-size(src="public/images/icon_search.svg", alt="搜尋")
+              li 
+                a(href='#')
+                  img.icon-size(src="public/images/icon_buy.svg", alt="購物車")
+              li 
+                a(href='#')
+                  img.icon-size(src="public/images/icon_sign_in.svg", alt="登入")
+                
+    // header end
+    // content start
+    // .container>h1{最新作品一覽}+.row>.col-md-4*6>img.img-fluid+p.title>a[href="#"]{標題$}^p.description{內容}
+    // .col-md-4*7>a>img[src="https://baconmockup.com/300/300" class="img-fluid img-rounded"]^p.title.text-center>a{作品標題$}^p.price.text-center{2022-6-15}
+    .container
+      .row
+        ul.col-12.breadcrumb
+          li.bread
+            a(href='index.html') 首頁/            
+          li.bread
+            a(href='#') 彈撥樂
+        h1.text-left-h1 彈撥樂
+      img.img-fluid(src='https://picsum.photos/1140/230' alt='')
+      .row
+        nav
+          ul.all-plucked.col-12.col-md-12.col-lg-12
+            li
+              a.btn-plucked(href='') 發條王子
+            li
+              a.btn-plucked(href='') 發條老鼠
+            li
+              a.btn-plucked(href='') 發條熊
+            li
+              a.btn-plucked(href='') 能量發條
+            li
+              a.btn-plucked(href='') 邪惡發條
+            li
+              a.btn-plucked(href='') 金色發條
+          .col-6.col-md-4.col-lg-4
+            h2.text-center-h2 琵琶
+            a(href='')
+              img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
+              img.fill-like(src="public/images/icon_fill_like.svg", alt="")            
+            p.title.text-left
+              a(href='') 胡桃木紋箏【嘉年華】
+            p.price.text-left.text-brown NT$76,500
+          .col-6.col-md-4.col-lg-4
+            h2.text-center-h2 琵琶
+            a(href='')
+              img.img-fluid.img-rounded(src='https://picsum.photos/220/220' alt='')
+              img.fill-like(src="public/images/icon_fill_like.svg", alt="")            
+            p.title.text-left
+              a(href='') 胡桃木紋箏【嘉年華】
+            p.price.text-left.text-brown NT$76,500
+      
+       
+       
+     
+          
+    // content end
+    // footer>.container>.row>dl.col-md-3*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright}
+  footer
+      .container
+        .row.space-between
+          nav
+            ul
+              li
+                a(href="") 
+                  img.img-fluid.img-rounded(src="public/images/icon_fb.svg", alt="")
+              li
+                a(href="")
+                  img.img-fluid.img-rounded(src="public/images/icon_ig.svg", alt="") 
+              li
+                a(href="") 
+                  img.img-fluid.img-rounded(src="public/images/icon_yt.svg", alt="")
+              li
+                a(href="") 
+                  img.img-fluid.img-rounded(src="public/images/icon_line.svg", alt="")
+              li
+                a(href="") 
+                  img.img-fluid.img-rounded(src="public/images/icon_twitter.svg", alt="")
+          
+            ul.text-footer
+              li 
+                a.border-left(href="") 關於我們                
+              li 
+                a.border-left(href="") 服務信箱                
+              li
+                a.border-left(href="") 常見問題            
+              li
+                a.border-left(href="") 條款及細則
+            p.text-center Copyright © 2022 古雲國樂 版權所有 
+  script(src="public/js/script.js")

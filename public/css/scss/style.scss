@@ -228,6 +228,13 @@ header>.container nav>ul>li>a{
    
     
 }
+.text-left-h1 {   
+    margin-left:40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 28px;
+
+}
 
 .text-right{
     text-align: right;
@@ -408,9 +415,19 @@ footer>.container>.row nav>p{
     width: 80%;
 
 }
+.container > .row > nav > ul > li{
+    margin: 10px 10px 10px 10px;
+}  
+.all-plucked{
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+    
+    
+}
 
-.btn-primary{
-    background-color:#adc0b1;
+.btn-plucked{
+    background-color:#DEBEC1;
     padding: 15px;
     color: #363230;
     display: block;
@@ -418,6 +435,16 @@ footer>.container>.row nav>p{
     border-radius: 4px;
     text-align: center;
 }
+
+// .btn-primary{
+//     background-color:#DEBEC1;
+//     padding: 15px;
+//     color: #363230;
+//     display: block;
+//     margin-bottom: 4px;
+//     border-radius: 4px;
+//     text-align: center;
+// }
 
 .btn-primary:hover{
     background:#4f8b77;

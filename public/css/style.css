@@ -172,6 +172,13 @@ header > .container nav > ul > li > a {
   text-align: left;
 }
 
+.text-left-h1 {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+}
+
 .text-right {
   text-align: right;
 }
@@ -532,8 +539,18 @@ footer > .container > .row nav > p {
   width: 80%;
 }
 
-.btn-primary {
-  background-color: #adc0b1;
+.container > .row > nav > ul > li {
+  margin: 10px 10px 10px 10px;
+}
+
+.all-plucked {
+  display: flex;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.btn-plucked {
+  background-color: #DEBEC1;
   padding: 15px;
   color: #363230;
   display: block;
