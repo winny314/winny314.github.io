@@ -253,6 +253,9 @@ header>.container nav>ul>li>a{
     font-size: 15px;
     color: #6C1319;
     font-weight: 400;
+}
+.text-a:hover{
+    text-decoration: underline;
 
 }
 .text-left-h2{
@@ -267,7 +270,7 @@ header>.container nav>ul>li>a{
 .text-left-h2::before{
     content:'';
     display:inline-block;
-    width:3px;
+    width:2px;
     height:20px;   
     margin-right: 15px;
     background:  #B79483;
@@ -275,7 +278,7 @@ header>.container nav>ul>li>a{
 .text-left-h2::after{
     content:'';
     display:inline-block;
-    width:3px;
+    width:2px;
     height:20px;   
     margin-left: 15px;
     background:  #B79483;
