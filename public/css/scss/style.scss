@@ -63,7 +63,7 @@ header > .container nav > ul > li > a:first-child {
     margin-left: 40px;       
     padding-left: 20px;
     width: 50%;
-    z-index: 2;
+    // z-index: 99;
         
 }
 
@@ -113,14 +113,15 @@ header>.container nav>ul>li>a{
     }
 
     .submenu {
-      position: absolute;
-      background-color: #fff;
-      box-shadow:3px 3px 5px #C29498;
-      width: 120%;
-      left: 35px;    //   2層選單的左右位置
-      top: 80px;
-      padding:10px 10px;
-      display: none;
+        z-index: 99;
+        position: absolute;
+        background-color: #fff;
+        box-shadow:3px 3px 5px #C29498;
+        width: 90%;
+        left: 35px;    //   2層選單的左右位置
+        top: 80px;
+        padding:10px 10px;
+        display: none;
     }
     
     .submenu > li {
@@ -178,7 +179,7 @@ header>.container nav>ul>li>a{
 // =========================== 圖片相關樣式
 .img-fluid{
     width: 100%;
-    z-index: -1;
+    // z-index: -1;
 }
 
 .img-rounded{
@@ -264,7 +265,7 @@ header>.container nav>ul>li>a{
     display: block;
     text-align: left;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 20px 2px 20px 10px ;
     padding: 0px 10px;
 
@@ -420,7 +421,7 @@ h2{
 // ============================== ===========================
 footer {
     background-color: #DEBEC1;
-
+    margin-top: 50px;
     padding: 20px 0 20px 0;
 }
 footer>.container>.row nav{
@@ -569,12 +570,12 @@ footer>.container>.row nav>p{
 
 
 
-.img-wrap{
-    display: block;
-    position: relative;
-    margin-bottom: 10px;
+// .img-wrap{
+//     display: block;
+//     position: relative;
+//     margin-bottom: 10px;
   
-}
+// }
 
 .img-overlay{
     overflow: hidden;
@@ -606,7 +607,9 @@ footer>.container>.row nav>p{
     // left:50%;
     // margin-left: -25px;
 }
-
+aside{
+    z-index: -99;
+}
 /*===================================icon-menu=================================== */
 
 // ================================= 小於767px以下執行 start
@@ -653,7 +656,7 @@ footer>.container>.row nav>p{
     
     header > .container nav{
         width: 100%;
-        z-index: 3;
+        z-index: 99;
         position: absolute;
         top:100px;
         background-color: #DEBEC1;
@@ -704,6 +707,7 @@ footer>.container>.row nav>p{
     .submenu{
         display: none;
         background-color:#9C5156;
+        z-index: 99;
     }
     header> .container nav> ul >li:hover .submenu{
         display: block;    
@@ -717,6 +721,7 @@ footer>.container>.row nav>p{
         display: block;
     }
     .breadcrumb{
+        z-index: -99;
         display: flex;
         margin-top: 20px;
         margin-bottom: 10px;
@@ -726,6 +731,7 @@ footer>.container>.row nav>p{
     
     .breadcrumb a{
         font-size: 14px;
+        overflow: hidden;
     }
     
 

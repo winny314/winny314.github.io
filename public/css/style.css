@@ -54,7 +54,6 @@ header > .container nav > ul > li > a:first-child {
   margin-left: 40px;
   padding-left: 20px;
   width: 50%;
-  z-index: 2;
 }
 
 .pull-up {
@@ -96,10 +95,11 @@ header > .container nav > ul > li > a {
   }
 
   .submenu {
+    z-index: 99;
     position: absolute;
     background-color: #fff;
     box-shadow: 3px 3px 5px #C29498;
-    width: 120%;
+    width: 90%;
     left: 35px;
     top: 80px;
     padding: 10px 10px;
@@ -125,7 +125,6 @@ header > .container nav > ul > li > a {
 }
 .img-fluid {
   width: 100%;
-  z-index: -1;
 }
 
 .img-rounded {
@@ -211,7 +210,7 @@ header > .container nav > ul > li > a {
   display: block;
   text-align: left;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 20px 2px 20px 10px;
   padding: 0px 10px;
 }
@@ -567,6 +566,7 @@ h2 {
 
 footer {
   background-color: #DEBEC1;
+  margin-top: 50px;
   padding: 20px 0 20px 0;
 }
 
@@ -678,12 +678,6 @@ footer > .container > .row nav > p {
   color: #fff;
 }
 
-.img-wrap {
-  display: block;
-  position: relative;
-  margin-bottom: 10px;
-}
-
 .img-overlay {
   overflow: hidden;
   border-radius: 8px;
@@ -709,6 +703,10 @@ footer > .container > .row nav > p {
   left: -25px;
   top: -25px;
   background-color: #49d437;
+}
+
+aside {
+  z-index: -99;
 }
 
 /*===================================icon-menu=================================== */
@@ -745,7 +743,7 @@ footer > .container > .row nav > p {
 
   header > .container nav {
     width: 100%;
-    z-index: 3;
+    z-index: 99;
     position: absolute;
     top: 100px;
     background-color: #DEBEC1;
@@ -782,6 +780,7 @@ footer > .container > .row nav > p {
   .submenu {
     display: none;
     background-color: #9C5156;
+    z-index: 99;
   }
 
   header > .container nav > ul > li:hover .submenu {
@@ -799,6 +798,7 @@ footer > .container > .row nav > p {
   }
 
   .breadcrumb {
+    z-index: -99;
     display: flex;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -807,6 +807,7 @@ footer > .container > .row nav > p {
 
   .breadcrumb a {
     font-size: 14px;
+    overflow: hidden;
   }
 
   .text-left-h1 {
