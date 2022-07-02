@@ -63,7 +63,6 @@ header > .container nav > ul > li > a:first-child {
     margin-left: 40px;       
     padding-left: 20px;
     width: 50%;
-    z-index: 2;
         
 }
 
@@ -178,7 +177,6 @@ header>.container nav>ul>li>a{
 // =========================== 圖片相關樣式
 .img-fluid{
     width: 100%;
-    z-index: -1;
 }
 
 .img-rounded{
@@ -384,12 +382,26 @@ article{
    
         
 }
+// ======================product START=======================================
+.text-product-color-red{
+    color:#9C5156 ;
+    margin-bottom: 5px;
+    font-size: 900 1.2em;
+}
+.text-product {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 300 1.2em;
+}
+
+
 .price{
     color:#B79483;
     font-size: 25px;
     font-weight: 500;
     margin-top:5px;
 }
+
 .price-small{
     color:#B79483;
     font-size: 16px 1em;
@@ -398,6 +410,33 @@ article{
     margin-top:8px;
 
 }
+.price-big{
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    color:#B79483;
+}
+.price-origin{
+    position: absolute;
+    left: 2px;
+    bottom: 30px;
+    font-weight:300 ;
+    color: #8a8a8a;
+    text-decoration:line-through solid;
+    font-size:14px
+
+
+}
+.all-product{
+    display: flex;    
+    margin-left: 0px;   
+}
+.plucked-distance{
+    margin: 15px 5px 15px 5px;
+}
+// =================================== product END==========================================
 .fill-like{
     position: absolute;
     bottom:2px;
@@ -653,7 +692,7 @@ footer>.container>.row nav>p{
     
     header > .container nav{
         width: 100%;
-        z-index: 3;
+        z-index: 1;
         position: absolute;
         top:100px;
         background-color: #DEBEC1;

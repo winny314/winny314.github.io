@@ -1,11 +1,5 @@
 
-
-        
-
-
 console.log('test')
-
-
 
 document.getElementById("btn-nav-toggle").addEventListener('click',openNav)
 
