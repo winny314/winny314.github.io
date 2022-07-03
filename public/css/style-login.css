@@ -266,7 +266,8 @@ header > .container nav > ul > li > a {
 .text-p {
   margin-left: 20px;
   margin-bottom: 5px;
-  font-size: 300 1em;
+  font-size: 18px 1em;
+  font-weight: 300;
 }
 
 article {
@@ -292,84 +293,84 @@ article {
 .col-1 {
   --num: calc(12 / 1);
   width: calc(100% / var(--num) - 50px);
-  margin: 0px 25px 45px 25px;
+  margin: 0px 25px 10px 25px;
   position: relative;
 }
 
 .col-2 {
   --num: calc(12 / 2);
   width: calc(100% / var(--num) - 50px);
-  margin: 0px 25px 45px 25px;
+  margin: 0px 25px 10px 25px;
   position: relative;
 }
 
 .col-3 {
   --num: calc(12 / 3);
   width: calc(100% / var(--num) - 50px);
-  margin: 0px 25px 45px 25px;
+  margin: 0px 25px 10px 25px;
   position: relative;
 }
 
 .col-4 {
   --num: calc(12 / 4);
   width: calc(100% / var(--num) - 50px);
-  margin: 0px 25px 45px 25px;
+  margin: 0px 25px 10px 25px;
   position: relative;
 }
 
 .col-5 {
   --num: calc(12 / 5);
   width: calc(100% / var(--num) - 50px);
-  margin: 0px 25px 45px 25px;
+  margin: 0px 25px 10px 25px;
   position: relative;
 }
 
 .col-6 {
   --num: calc(12 / 6);
   width: calc(100% / var(--num) - 50px);
-  margin: 0px 25px 45px 25px;
+  margin: 0px 25px 10px 25px;
   position: relative;
 }
 
 .col-7 {
   --num: calc(12 / 7);
   width: calc(100% / var(--num) - 50px);
-  margin: 0px 25px 45px 25px;
+  margin: 0px 25px 10px 25px;
   position: relative;
 }
 
 .col-8 {
   --num: calc(12 / 8);
   width: calc(100% / var(--num) - 50px);
-  margin: 0px 25px 45px 25px;
+  margin: 0px 25px 10px 25px;
   position: relative;
 }
 
 .col-9 {
   --num: calc(12 / 9);
   width: calc(100% / var(--num) - 50px);
-  margin: 0px 25px 45px 25px;
+  margin: 0px 25px 10px 25px;
   position: relative;
 }
 
 .col-10 {
   --num: calc(12 / 10);
   width: calc(100% / var(--num) - 50px);
-  margin: 0px 25px 45px 25px;
+  margin: 0px 25px 10px 25px;
   position: relative;
 }
 
 .col-11 {
   --num: calc(12 / 11);
   width: calc(100% / var(--num) - 50px);
-  margin: 0px 25px 45px 25px;
+  margin: 0px 25px 10px 25px;
   position: relative;
 }
 
 .col-12 {
   --num: calc(12 / 12);
   width: calc(100% / var(--num) - 50px);
-  margin: 0px 25px 45px 25px;
+  margin: 0px 25px 10px 25px;
   position: relative;
 }
 
@@ -377,146 +378,206 @@ article {
   .col-md-1 {
     --num: calc(12 / 1);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 10px 25px;
+  }
+
+  .offset-md-1 {
+    --ml-num: calc(12 / 1);
+    margin-left: calc(100% / var(--ml-num));
   }
 
   .col-md-2 {
     --num: calc(12 / 2);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 10px 25px;
+  }
+
+  .offset-md-2 {
+    --ml-num: calc(12 / 2);
+    margin-left: calc(100% / var(--ml-num));
   }
 
   .col-md-3 {
     --num: calc(12 / 3);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 10px 25px;
+  }
+
+  .offset-md-3 {
+    --ml-num: calc(12 / 3);
+    margin-left: calc(100% / var(--ml-num));
   }
 
   .col-md-4 {
     --num: calc(12 / 4);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 10px 25px;
+  }
+
+  .offset-md-4 {
+    --ml-num: calc(12 / 4);
+    margin-left: calc(100% / var(--ml-num));
   }
 
   .col-md-5 {
     --num: calc(12 / 5);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 10px 25px;
+  }
+
+  .offset-md-5 {
+    --ml-num: calc(12 / 5);
+    margin-left: calc(100% / var(--ml-num));
   }
 
   .col-md-6 {
     --num: calc(12 / 6);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 10px 25px;
+  }
+
+  .offset-md-6 {
+    --ml-num: calc(12 / 6);
+    margin-left: calc(100% / var(--ml-num));
   }
 
   .col-md-7 {
     --num: calc(12 / 7);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 10px 25px;
+  }
+
+  .offset-md-7 {
+    --ml-num: calc(12 / 7);
+    margin-left: calc(100% / var(--ml-num));
   }
 
   .col-md-8 {
     --num: calc(12 / 8);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 10px 25px;
+  }
+
+  .offset-md-8 {
+    --ml-num: calc(12 / 8);
+    margin-left: calc(100% / var(--ml-num));
   }
 
   .col-md-9 {
     --num: calc(12 / 9);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 10px 25px;
+  }
+
+  .offset-md-9 {
+    --ml-num: calc(12 / 9);
+    margin-left: calc(100% / var(--ml-num));
   }
 
   .col-md-10 {
     --num: calc(12 / 10);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 10px 25px;
+  }
+
+  .offset-md-10 {
+    --ml-num: calc(12 / 10);
+    margin-left: calc(100% / var(--ml-num));
   }
 
   .col-md-11 {
     --num: calc(12 / 11);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 10px 25px;
+  }
+
+  .offset-md-11 {
+    --ml-num: calc(12 / 11);
+    margin-left: calc(100% / var(--ml-num));
   }
 
   .col-md-12 {
     --num: calc(12 / 12);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 10px 25px;
+  }
+
+  .offset-md-12 {
+    --ml-num: calc(12 / 12);
+    margin-left: calc(100% / var(--ml-num));
   }
 }
 @media (min-width: 1200px) {
   .col-lg-1 {
     --num: calc(12 / 1);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 20px 25px;
   }
 
   .col-lg-2 {
     --num: calc(12 / 2);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 20px 25px;
   }
 
   .col-lg-3 {
     --num: calc(12 / 3);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 20px 25px;
   }
 
   .col-lg-4 {
     --num: calc(12 / 4);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 20px 25px;
   }
 
   .col-lg-5 {
     --num: calc(12 / 5);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 20px 25px;
   }
 
   .col-lg-6 {
     --num: calc(12 / 6);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 20px 25px;
   }
 
   .col-lg-7 {
     --num: calc(12 / 7);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 20px 25px;
   }
 
   .col-lg-8 {
     --num: calc(12 / 8);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 20px 25px;
   }
 
   .col-lg-9 {
     --num: calc(12 / 9);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 20px 25px;
   }
 
   .col-lg-10 {
     --num: calc(12 / 10);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 20px 25px;
   }
 
   .col-lg-11 {
     --num: calc(12 / 11);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 20px 25px;
   }
 
   .col-lg-12 {
     --num: calc(12 / 12);
     width: calc(100% / var(--num) - 50px);
-    margin: 0px 25px 45px 25px;
+    margin: 0px 25px 20px 25px;
   }
 }
 @media (min-width: 768px) {
@@ -532,6 +593,45 @@ article {
   margin-top: 10px;
 }
 
+.main-img {
+  margin-bottom: 10px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thumbnails > img {
+  width: 73px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.thumbnails > img:last-child {
+  margin-right: 0px;
+}
+
+.thumbnails > img.active {
+  border: 2px solid #80C0A4;
+}
+
+.text-product-color-red {
+  color: #9C5156;
+  margin-bottom: 5px;
+  font-size: 14px 1.2em;
+  font-weight: 500;
+}
+
+.text-product {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 14px 1.2em;
+  font-weight: 500;
+}
+
 .price {
   color: #B79483;
   font-size: 25px;
@@ -544,6 +644,203 @@ article {
   font-size: 16px 1em;
   font-weight: 500;
   margin-top: 8px;
+}
+
+.price-big {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 900;
+  color: #B79483;
+}
+
+.product-distance {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-right: 6px;
+}
+
+.price-origin {
+  position: absolute;
+  left: 2px;
+  bottom: 30px;
+  font-weight: 300;
+  color: #8a8a8a;
+  text-decoration: line-through solid;
+  font-size: 14px;
+}
+
+.all-product {
+  display: flex;
+  margin-left: 0px;
+}
+
+.btn-many {
+  background-color: #DEBEC1;
+  border: 1px #9C5156 solid;
+  padding: 8px 140px;
+  color: #9C5156;
+  margin-bottom: 4px;
+  font-size: 14px 1.5em;
+  font-weight: 500;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.btn-buy {
+  background-color: #fff;
+  border: 1px #9C5156 solid;
+  padding: 8px 47px;
+  color: #9C5156;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  font-size: 14px 1.5em;
+  font-weight: 500;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.btn-buy:hover {
+  background-color: #6C1319;
+  border: 1px #6C1319 solid;
+  font-weight: 500;
+  color: #fff;
+}
+
+.btn-shopping-cart {
+  background-color: #9C5156;
+  border: 1px #9C5156 solid;
+  padding: 8px 47px;
+  color: #fff;
+  margin-bottom: 4px;
+  font-size: 14px 1.5em;
+  font-weight: 500;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.btn-shopping-cart:hover {
+  background-color: #5E0E12;
+  border: 1px #5E0E12 solid;
+  font-weight: 500;
+  color: #fff;
+}
+
+.plucked-distance {
+  margin: 15px 5px 15px 5px;
+}
+
+.all-plucked-product {
+  display: flex;
+  margin-left: 0px;
+}
+
+.text-name {
+  margin: -15px 0px 10px 38px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.text-title {
+  margin: 15px 0px 10px 38px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+
+.form {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 10px 50px;
+  border: #DEBEC1 1px solid;
+  border-radius: 3px;
+}
+
+.input-group {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+label {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  color: rgba(54, 50, 48, 0.6);
+  display: block;
+}
+
+input {
+  padding: 3px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgba(222, 190, 193, 0.4);
+  line-height: 30px;
+}
+
+.text-box {
+  font-size: 14px;
+  font-weight: 900;
+  color: #363230;
+  letter-spacing: 0.1em;
+}
+
+input[type=text] {
+  width: 100%;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+hr {
+  border-color: #9C5156;
+  border: 2px;
+}
+
+.w-48 {
+  width: 48%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.btn-send {
+  background-color: #9C5156;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondry {
+  border: none;
+  cursor: pointer;
+}
+
+.text-red-center {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #9C5156;
 }
 
 .fill-like {
@@ -621,6 +918,7 @@ footer > .container > .row nav > p {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
+  color: #363230;
 }
 
 .breadcrumb a {
@@ -680,9 +978,15 @@ footer > .container > .row nav > p {
   color: #fff;
 }
 
+.img-wrap {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
 .img-overlay {
   overflow: hidden;
-  border-radius: 8px;
+  width: 73px;
 }
 
 .img-wrap img {
@@ -705,10 +1009,6 @@ footer > .container > .row nav > p {
   left: -25px;
   top: -25px;
   background-color: #49d437;
-}
-
-aside {
-  z-index: -99;
 }
 
 /*===================================icon-menu=================================== */
@@ -780,9 +1080,9 @@ aside {
   }
 
   .submenu {
+    z-index: 99;
     display: none;
     background-color: #9C5156;
-    z-index: 99;
   }
 
   header > .container nav > ul > li:hover .submenu {
@@ -809,7 +1109,6 @@ aside {
 
   .breadcrumb a {
     font-size: 14px;
-    overflow: hidden;
   }
 
   .text-left-h1 {
@@ -910,6 +1209,93 @@ aside {
 
   footer > .container > .row li {
     margin: 20px 11px 0px 11px;
+  }
+
+  .left-h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #9C5156;
+  }
+
+  .text-product {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 14px 1.2em;
+    font-weight: 300;
+  }
+
+  .price-big {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #B79483;
+  }
+
+  .bottom-distance {
+    margin-bottom: 0px;
+  }
+
+  .thumbnails > img {
+    width: 45px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+
+  .btn-many {
+    background-color: #DEBEC1;
+    border: 1px #9C5156 solid;
+    padding: 8px 80px;
+    color: #9C5156;
+    margin-bottom: 4px;
+    font-size: 14px 1.5em;
+    font-weight: 500;
+    border-radius: 2px;
+    text-align: center;
+  }
+
+  .btn-buy {
+    background-color: #fff;
+    border: 1px #9C5156 solid;
+    padding: 8px 14px;
+    color: #9C5156;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    font-size: 14px 1.5em;
+    font-weight: 500;
+    border-radius: 2px;
+    text-align: center;
+  }
+
+  .btn-buy:hover {
+    background-color: #6C1319;
+    border: 1px #6C1319 solid;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .btn-shopping-cart {
+    background-color: #9C5156;
+    border: 1px #9C5156 solid;
+    padding: 8px 20px;
+    color: #fff;
+    margin-bottom: 4px;
+    font-size: 14px 1.5em;
+    font-weight: 500;
+    border-radius: 2px;
+    text-align: center;
+  }
+
+  .btn-shopping-cart:hover {
+    background-color: #5E0E12;
+    border: 1px #5E0E12 solid;
+    font-weight: 500;
+    color: #fff;
   }
 }
 @media (min-width: 981px) {

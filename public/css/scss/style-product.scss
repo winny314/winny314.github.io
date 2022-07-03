@@ -637,15 +637,15 @@ footer>.container>.row nav>p{
     color:#363230;
     
 }
-.breadcrumb a::after{
-    content: '/';
-    margin-left: 5px;
-
+.breadcrumb li{
+    margin-right: 10px;
 }
-.breadcrumb a:last-child{
-    content:none;
-    margin-left: 0px;
-
+.breadcrumb li::after{
+    content: '/';
+    margin-left: 10px;
+}
+.breadcrumb li:last-child::after{
+    content:' ';
 }
 
 .w-20{

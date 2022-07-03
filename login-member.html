@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>古雲國樂|彈撥|大葉紫檀琵琶</title>
-    <link rel="stylesheet" href="public/css/style-product.css">
+    <title>古雲國樂</title>
+    <link rel="stylesheet" href="public/css/style-login.css">
   </head>
   <body>
     <!-- header start-->
@@ -46,64 +46,43 @@
               <li><a href="store.html">門市資訊</a></li>
               <li> <a href="#"> <img class="icon-size" src="public/images/icon_search.svg" alt="搜尋"></a></li>
               <li> <a href="#"><img class="icon-size" src="public/images/icon_buy.svg" alt="購物車"></a></li>
-              <li> <a href="#"><img class="icon-size" src="public/images/icon_sign_in.svg" alt="登入"></a></li>
+              <li> <a href="login-member.html"><img class="icon-size" src="public/images/icon_sign_in.svg" alt="登入"></a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
     <!-- header end-->
-    <!-- content start-->
     <div class="container">
       <div class="row">
-        <ul class="col-12 breadcrumb">
-          <li class="bread"><a href="index.html">首頁            </a></li>
-          <li class="bread"><a href="plucked-music.html">彈撥樂</a></li>
-          <li class="bread"><a href="#">琵琶</a></li>
-        </ul>
-        <aside class="col-12 col-md-5 col-lg-5">
-          <div class="main-img"><img class="img-fluid" src="public/images/pipaA-1.jpg" alt=""></div>
-          <div class="thumbnails"><img class="active" src="public/images/pipaA-1.jpg" alt=""><img src="public/images/pipaA-2.jpg" alt=""><img src="public/images/pipaA-3.jpg" alt=""><img src="public/images/pipaA-4.jpg" alt=""><img src="public/images/pipaA-5.jpg" alt=""></div>
-        </aside>
-        <article class="describe col-12 col-md-7 col-lg-7"> 
-          <div class="col-12">
-            <dl class="bottom-distance">
-              <dt class="left-h2">古雲 大葉紫檀琵琶
-                <dd class="text-product">◇全店，滿5000免一般貨運費 ( 限台灣訂單 )</dd>
-                <dd class="text-product-color-red">現庫存只剩下2件                </dd>
-                <dd class="price-big">NT$999,000
-                  <p class="price-origin">NT$1299,000</p>
-                </dd>
-                <div class="choose"> </div>
-              </dt>
-            </dl>
-            <ul class="all-product">  
-              <li class="product-distance"><a class="btn-many" href="">購買數量         </a></li>
-            </ul>
-            <ul class="all-plucked-product">               
-              <li class="product-distance"><a class="btn-buy" href="">直接購買</a></li>
-              <li class="product-distance"><a class="btn-shopping-cart" href="">加入購物車</a></li>
-            </ul>
-          </div>
-        </article>
+        <div class="col-12 col-md-6 offset-md-3">
+          <form class="form" action="javascript:;">
+            <h2 class="text-red-center">登入會員</h2>
+            <div class="input-group">
+              <label for="account">電子郵件</label>
+              <input type="text" id="account">
+            </div>
+            <div class="input-group">
+              <label for="account">密碼（至少6個字元）</label>
+              <input type="text" id="account">
+            </div>
+            <div class="input-group flex-space-between">
+              <div class="w-40 text-box">
+                <input type="checkbox" name="">保持登入？
+              </div>
+              <div class="w-48">
+                <input class="btn-send w-100" type="submit" value="送出">
+              </div>
+            </div>
+            <hr>
+            <div class="input-group flex-space-between">
+              <label class="btn-secondry w-48" for="account" type="submit" value="註冊會員！"></label>
+              <label class="btn-primary w-48" for="account" type="submit" value="忘記密碼？">   </label>
+            </div>
+          </form>
+        </div>
       </div>
-      <h2 class="text-left-h2">詳細資料</h2>
-      <p class="text-name">古雲 大葉紫檀琵琶</p>
-      <ul class="text-title">商品特色
-        <li>◇ 古雲國樂限量兩支，此款珍稀少見，值得收藏。</li>
-        <li>◇ 主要由黑酸枝木類的大葉紫檀原木拋光製成，俗名又稱盧氏黑黃檀、血檀或玫瑰檀，質地細密紮實，紋路獨具特色。</li>
-        <li>◇ 刻有經典的牡丹造型頭飾、梧桐木面板、木質相軫等特色，以及琵琶演奏名家容萱簽名。</li>
-      </ul>
-      <ul class="text-title">商品規格
-        <li>◇ 品牌：樂海</li>
-        <li>◇ 型號：02152042-918JZ-2</li>
-        <li>◇ 產地：台灣</li>
-        <li>◇ 主要材質：黑酸枝木(大葉紫檀)</li>
-        <li>◇ 附屬品：琴盒、指甲、備弦</li>
-        <li>◇ 保固：3年</li>
-      </ul>
     </div>
-    <!-- content end-->
     <!-- footer>.container>.row>dl.col-md-3*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright}-->
   </body>
   <footer>
@@ -129,6 +108,4 @@
     </div>
   </footer>
   <script src="public/js/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"> </script>
-  <script src="public/js/script-change-imag.js"></script>
 </html>

@@ -1,0 +1,73 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title 聯絡我們|EASY WASH
+        link(rel='stylesheet', href='public/css/easy-wash-styles.css')
+    body
+        header
+            div.container
+                .row
+                    h1
+                        a(href='index.html')
+                            img(src="public/images/logo_KU_YUN.svg" alt="")
+                    a#btn-nav-switch.icon-menu.display-md-none(href="javascript:;") menu
+                    nav
+                        ul
+                            li
+                                a(href="about.html") 關於我們
+                            li
+                                a(href="javascript:;") 產品列表
+                                ul.submenu
+                                    li
+                                        a(href="product-list.html") 分類1
+                                    li
+                                        a(href="product-list.html") 分類2
+                            li
+                                a(href="javascrip:;") 顧客心得
+                                ul.submenu
+                                    li
+                                        a(href="testimonial.html") 分類1
+                                    li
+                                        a(href="testimonial.html") 分類2
+                            li
+                                a(href="faq.html") 常見問題
+                            li
+                                a(href="contact.html") 聯絡我們
+        .container
+            .row
+                .col-12.col-md-6.offset-md-3  
+                    form.form(action="javascript:;")
+                        h2.mb-1.text-center 我的會員
+                        .input-group
+                            label(for="account") 帳號
+                            input(type="text" id="account")
+                        .input-group
+                            label(for="account") 密碼
+                            input(type="text" id="account")
+                        .input-group
+                            .w-48
+                                input(type="checkbox", name="")
+                                |記住帳號 
+                            .w-48
+                                a(href="") fb
+                                a(href="") ig
+                                a(href="") line
+                        .input-group.flex-space-between
+                            input.btn-secondry.w-48(type="submit" value="註冊")
+                            input.btn-primary.w-48(type="submit" value="登入") 
+
+        footer
+            .container
+                .row
+                    .col-12.col-md-3.mb-1 phone
+                    .col-12.col-md-3.mb-1 addres
+                    .col-12.col-md-3.mb-1 line
+                    .col-12.col-md-3.mb-1 fax
+                    .col-12.text-center.copyright copyright
+
+
+        script(src="https://code.jquery.com/jquery-3.6.0.min.js",integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=",crossorigin="anonymous")
+        script(src="public/js/easy-wash-script.js")
