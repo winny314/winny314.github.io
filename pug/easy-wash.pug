@@ -1,0 +1,92 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title EASY WASH
+        link(rel='stylesheet', href='public/css/easy-wash-styles.css')
+    body
+        header
+            div.container
+                .row
+                    h1
+                        a.logo(href="easy-wash.html") easy wash
+                            //- img
+                    a#btn-nav-switch.icon-menu.display-md-none(href="javascript:;") 
+                        img(src="public/images/logo.svg", width="100%", alt="")
+                    nav
+                        ul
+                            li
+                                a(href="about.html") 關於我們
+                            li
+                                a(href="javascript:;") 產品列表
+                                ul.submenu
+                                    li
+                                        a(href="product-list.html") 分類1
+                                    li
+                                        a(href="product-list.html") 分類2
+                            li
+                                a(href="javascrip:;") 顧客心得
+                                ul.submenu
+                                    li
+                                        a(href="testimonial.html") 分類1
+                                    li
+                                        a(href="testimonial.html") 分類2
+                            li
+                                a(href="faq.html") 常見問題
+                            li
+                                a(href="contact.html") 聯絡我們
+        div.banner
+            img(class="img-fluid", src="public/images/banner.jpg", alt="")
+        section.news-section
+            .container
+                h2 最新消息
+                ul
+                    li
+                        span.news-date 2022-06-10
+                        span.news-tag 產品資訊
+                        span.news-title 
+                            a(href="") 裝修好幫手
+                    li
+                        span.news-date 2022-06-10
+                        span.news-tag 產品資訊
+                        span.news-title 
+                            a(href="") 裝修好幫手
+                    li
+                        span.news-date 2022-06-10
+                        span.news-tag 產品資訊
+                        span.news-title 
+                            a(href="") 裝修好幫手
+        section.product-section-1.position-relative
+            .container
+                .row
+                    .col-12.col-md-6 
+                        img.img-fluid.mb-2.mb-md-0(src="public/images/banner.jpg", alt="")
+                    .col-12.col-md-6
+                        p.product-title 商品名稱
+                        p.product-description 商品描述
+            .position-absolute.deco-1 1
+            .position-absolute.deco-2 2
+        section.product-section-2
+            .container
+                .row
+                    .col-12.col-md-6 
+                        img.img-fluid.mb-2.mb-md-0(src="public/images/banner.jpg", alt="")
+                    .col-12.col-md-6.order-md-1
+                        p.product-title 商品名稱
+                        p.product-description 商品描述
+        footer
+            .container
+                .row
+                    .col-12.col-md-3.mb-1 phone
+                    .col-12.col-md-3.mb-1 addres
+                    .col-12.col-md-3.mb-1 line
+                    .col-12.col-md-3.mb-1 fax
+                    .col-12.text-center.copyright copyright
+
+        a.page-top(href="javascript:;") top
+        //- script(src="https://code.jquery.com/jquery-3.6.0.min.js",integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=",crossorigin="anonymous")
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
+        
+        //- script(src="public/js/easy-wash-script.js")
