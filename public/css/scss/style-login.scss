@@ -122,12 +122,10 @@ header>.container nav>ul>li>a{
         top: 80px;
         padding:10px 10px;
         display: none;
-    }
-    
+    }    
     .submenu > li {
       line-height: 40px;
-    }
-  
+    }  
     .submenu > li > a {
         display: block;
         color: black;
@@ -357,12 +355,21 @@ article{
             width: calc(100% / var(--num) - 50px);
             margin: 0px 25px 10px 25px;
         }
+        
+    } 
+    // 左邊界位移
+    @for $i from 1 through 12 {
+        
         .offset-md-#{$i}{
             --ml-num: calc(12 / #{$i});
             margin-left: calc(100% / var(--ml-num));
         }
     }
+
 } // 768px end
+
+
+
 
 @media (min-width:1200px){
     @for $i from 1 through 12 {
@@ -542,8 +549,15 @@ article{
 // =================================== product END==========================================
 // -------------------------------------------form start 222---------------------------------
 .form{
+    margin-top: 100px;
+    margin-bottom: 270px;
+    padding: 10px 50px;
+    border:#DEBEC1 1px solid;
+    border-radius: 3px;
+}
+.form-register{
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     padding: 10px 50px;
     border:#DEBEC1 1px solid;
     border-radius: 3px;
@@ -570,12 +584,59 @@ input{
     background-color:rgba(222, 190, 193,0.4 );
     line-height: 30px;
 }
+.terms{
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    height: 300px;
+    border:#DEBEC1 1px solid;
+    border-radius: 2px;
+    overflow: auto ;
+}
+.text-name-2 {
+    margin: 5px 0px 0px 0px;    
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+.text-title-2 {
+    margin: 10px 0px 10px 0px;    
+    font-size: 16px ;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: .1em;
+}
 .text-box{
     font-size: 14px;
     font-weight: 900;
     color: rgba(54, 50, 48);
     letter-spacing: .1em;
+    margin-left: 24px;
+    margin-top: -24px;
    
+}
+.text-box-2{
+    font-size: 14px;
+    font-weight: 900;
+    color: rgba(54, 50, 48);
+    letter-spacing: .1em;
+
+}
+.btn-register{
+    margin:25px 0px 5px 0px;
+    background-color: $primary-color;
+    color: #fff;
+    border:1px solid $primary-color;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .2em;
+    cursor: pointer;
+}
+.btn-register:hover{
+    background-color: #fff;
+    color: $primary-color;
+    border:1px solid $primary-color;
+
 }
 input[type="text"]{
     width: 100%;
@@ -583,9 +644,17 @@ input[type="text"]{
 .flex-space-between{
     justify-content: space-between;
 }
+.flex-space-center{
+    justify-content:center;
+}
 hr{
-    border-color:#9C5156 ;
-    border:2px;
+    margin-top: 15px;
+    color:#C29498 ;
+    border:1px solid;
+}
+.text-a{
+    margin-top: 10px;
+    color: #9C5156;
 }
 .w-48{
     width: 48%;
@@ -603,11 +672,17 @@ hr{
 .btn-send{
     background-color: $primary-color;
     color: #fff;
-    border: none;
+    border:1px solid $primary-color;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: .2em;
     cursor: pointer;
+}
+.btn-send:hover{
+    background-color: #fff;
+    color: $primary-color;
+    border:1px solid $primary-color;
+
 }
 .btn-primary{
     // background-color: $primary-color;

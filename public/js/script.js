@@ -63,7 +63,7 @@ $(window).resize(function(){
             $(this).find('.submenu').addClass('active')
         }, function(){
             // 滑鼠滑出執行
-            $(this).find('.submenu').removeClass('active')
+            $(this).find('.submenu').removeClass('active','')
     
         })
     }else{

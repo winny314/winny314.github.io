@@ -4,9 +4,8 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title 古雲國樂|彈撥|大葉紫檀琵琶
-    link(rel='stylesheet' href='public/css/style-product.css')
-    
+    title 古雲國樂|註冊會員
+    link(rel='stylesheet' href='public/css/style-login.css')
   body
     // header start
     header
@@ -16,6 +15,7 @@ html(lang='en')
             a(href='index.html')
               img(src="public/images/logo_KU_YUN.svg" alt="")
           a#btn-nav-toggle.icon-menu(href="#") Menu
+
           nav#primary-navigation
             ul
               li
@@ -66,61 +66,53 @@ html(lang='en')
                 a(href='login-member.html')
                   img.icon-size(src="public/images/icon_sign_in.svg", alt="登入")
                 
+ 
     // header end
-  
-    // content start
+
+    //---------------------------------------------- content start
     
     .container
       .row
-        ul.col-12.breadcrumb
-          li.bread
-            a(href='index.html') 首頁            
-          li.bread
-            a(href='plucked-music.html') 彈撥樂
-          li.bread
-            a(href='#') 琵琶
-        aside.col-12.col-md-5.col-lg-5
-          .main-img
-            img.img-fluid(src='public/images/pipaA-1.jpg' alt='')
-          .thumbnails
-            img.active(src="public/images/pipaA-1.jpg", alt="")
-            img(src="public/images/pipaA-2.jpg", alt="")
-            img(src="public/images/pipaA-3.jpg", alt="")
-            img(src="public/images/pipaA-4.jpg", alt="")
-            img(src="public/images/pipaA-5.jpg", alt="")
+        .col-12.col-md-6.offset-md-3
+          form.form-register(action="javascript:;")
+            h2.text-red-center 註冊會員
+            .input-group
+              label(for="account") 用戶名
+              input(type="text" id="account")
+            .input-group
+              label(for="account") 電子郵件
+              input(type="text" id="account")
+            .input-group
+              label(for="account") 密碼（至少6個字元）
+              input(type="text" id="account")
+            .input-group
+              label(for="account") 確認密碼
+              input(type="text" id="account")
+            .input-group
+              input(type="checkbox", name="", style="height:20px;width:20px;border:1px solid;margin-right: 5px;")
+              .text-box-2 我同意網站服務條款及隱私權政策 
+            //- .input-group.flex-space-between
             
-           
-        article.describe.col-12.col-md-7.col-lg-7  
-          .col-12
-            dl.bottom-distance
-              dt.left-h2 古雲 大葉紫檀琵琶
-                dd.text-product ◇全店，滿5000免一般貨運費 ( 限台灣訂單 )
-                dd.text-product-color-red 現庫存只剩下2件                
-                dd.price-big NT$999,000
-                  p.price-origin NT$1299,000
-                div.choose 
-            ul.all-product   
-              li.product-distance
-                a.btn-many(href='') 購買數量         
-            ul.all-plucked-product                
-              li.product-distance
-                a.btn-buy(href='') 直接購買
-              li.product-distance
-                a.btn-shopping-cart(href='') 加入購物車
-      h2.text-left-h2 詳細資料
-      p.text-name 古雲 大葉紫檀琵琶
-      ul.text-title 商品特色
-        li ◇ 古雲國樂限量兩支，此款珍稀少見，值得收藏。
-        li ◇ 主要由黑酸枝木類的大葉紫檀原木拋光製成，俗名又稱盧氏黑黃檀、血檀或玫瑰檀，質地細密紮實，紋路獨具特色。
-        li ◇ 刻有經典的牡丹造型頭飾、梧桐木面板、木質相軫等特色，以及琵琶演奏名家容萱簽名。
-      ul.text-title 商品規格
-        li ◇ 品牌：樂海
-        li ◇ 型號：02152042-918JZ-2
-        li ◇ 產地：台灣
-        li ◇ 主要材質：黑酸枝木(大葉紫檀)
-        li ◇ 附屬品：琴盒、指甲、備弦
-        li ◇ 保固：3年
-    // content end
+            .terms
+              p.text-name-2 條款與細則
+              ul.text-title-2 親愛的會員您好：
+                li 非常感謝您使用古雲國樂商店（以下稱本服務），本公司將根據以下之會員服務條款（以下簡稱本條款），提供會員便利的交易。
+                li 為了保障您的權益，請務必詳讀本條款，在您註冊成為本商店會員、或開始使用本服務時，即視為您已經閱讀、瞭解並同意接受本條款及「隱私權保護政策」之所有內容，並視為您已確認詳閱並同意個人資料保護告知暨同意事項。如您不同意本條款之全部或部分內容，請勿註冊，並請立即停止使用本服務。
+              ul.text-title-2 一、商品購買前須知
+                li ◇ 部分樂器商品為天然材質、手工製成，相同款式可能存在些許差異。
+                li ◇ 因每台螢幕的顯色方式不同，商品色彩以實際為主。
+              ul.text-title-2 二、會員資料
+                li ◇ 在您使用本服務之前，必須提供正確個人資料，並加入成為本商店會員，無須支付任何費用；在加入完成後，始得登入本公司網站，使用本服務及參加與本服務相關之活動。如個人資料有異動，請務必即時更新，以保障您的權益。如因會員未正確更新個人資料，致未能收到本公司寄發之會員權益、消費優惠、活動內容等相關資訊，或變更、終止會員權益、消費優惠、活動內容之通知，會員同意在此情形下，視為會員已經收到該等資訊或通知。
+                li ◇ 隱私權保護聲明：會員之個人資料受到本公司隱私權條款之保護與規範。
+              ul.text-title-2 三、服務內容的變更
+                li 會員同意本商店得隨時調整、變更、修改或終止本服務及本條款，於本公司公告後生效，不再另行個別通知。會員因參與本公司活動及使用本公司服務，而與本公司所發生之權利義務關係，均以本條款最新修訂之版本為準。
+            .input-group.flex-space-center
+              input.btn-register.w-48(type="submit" value="註冊")
+
+
+
+
+    //---------------------------------------------- content end
     // footer>.container>.row>dl.col-md-3*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright}
   footer
       .container
@@ -154,5 +146,4 @@ html(lang='en')
                 a.border-left(href="") 條款及細則
             p.text-center Copyright © 2022 古雲國樂 版權所有 
   script(src="public/js/script.js")
-  script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous") 
-  script(src="public/js/script-change-imag.js")
+  

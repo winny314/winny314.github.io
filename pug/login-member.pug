@@ -4,7 +4,7 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title 古雲國樂
+    title 古雲國樂|登入會員
     link(rel='stylesheet' href='public/css/style-login.css')
   body
     // header start
@@ -83,15 +83,16 @@ html(lang='en')
               label(for="account") 密碼（至少6個字元）
               input(type="text" id="account")
             .input-group.flex-space-between
-              .w-40.text-box
-                input(type="checkbox", name="")
-                |保持登入？
+              .w-40
+                input(type="checkbox", name="", style="height:20px;width:20px;border:1px solid;margin-right: 5px;")
+                .text-box 保持登入？
               .w-48
                 input.btn-send.w-100(type="submit" value="送出")
             hr
             .input-group.flex-space-between
-              label(for="account").btn-secondry.w-48(type="submit" value="註冊會員！")
-              label(for="account").btn-primary.w-48(type="submit" value="忘記密碼？")    
+              a.text-a(href="register.html") 註冊會員！
+              a.text-a(href="") 忘記密碼？
+              
 
 
 

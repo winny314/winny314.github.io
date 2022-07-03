@@ -1,29 +1,9 @@
 "use strict";
 
-// ------------------------------------------------------------------
-// -----------------------------menu start
-console.log('test');
-document.getElementById("btn-nav-toggle").addEventListener('click', openNav); // 函式名稱
-
-function openNav() {
-  console.log('點開按鈕打開主導覽');
-
-  if (document.getElementById('primary-navigation').classList.contains('active') == true) {
-    // 假如主導覽有active類別時執行
-    document.getElementById('primary-navigation').classList.remove('active');
-    document.getElementById('btn-nav-toggle').textContent = 'Menu';
-  } else {
-    // 假如主導覽沒有active類別時執行
-    document.getElementById('primary-navigation').classList.add('active');
-    document.getElementById('btn-nav-toggle').textContent = 'X';
-  } // openNav if end
-
-} // openNav end
-// -----------------------------menu end
-// -----------------------------------------------------------------
+//================
+// 手機版 PC版 menu nav
+//================
 // 定義視窗寬度的變數
-
-
 var windowWidth = $(window).width(); // 進網頁直接執行一次 判斷
 
 if (windowWidth >= 768) {
@@ -61,7 +41,7 @@ $(window).resize(function () {
       $(this).find('.submenu').addClass('active');
     }, function () {
       // 滑鼠滑出執行
-      $(this).find('.submenu').removeClass('active', '');
+      $(this).find('.submenu').removeClass('active');
     });
   } else {
     // 小於768執行
