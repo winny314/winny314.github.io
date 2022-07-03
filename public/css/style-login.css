@@ -783,12 +783,31 @@ label {
   display: block;
 }
 
+label-2 {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  color: rgba(54, 50, 48, 0.6);
+  display: block;
+  padding-right: 4px;
+}
+
 input {
   padding: 3px;
   border: none;
   border-radius: 2px;
   background-color: rgba(222, 190, 193, 0.4);
   line-height: 30px;
+}
+
+input-2 {
+  padding: 3px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgba(222, 190, 193, 0.4);
+  line-height: 100px;
 }
 
 .terms {
@@ -851,6 +870,11 @@ input {
 
 input[type=text] {
   width: 100%;
+}
+
+input-2[type=text] {
+  width: 100%;
+  height: 150px;
 }
 
 .flex-space-between {
