@@ -6,6 +6,12 @@ html(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title 古雲國樂
     link(rel='stylesheet' href='public/css/style.css')
+   
+
+
+
+
+
   body
     // header start
     header
@@ -73,7 +79,26 @@ html(lang='en')
     // content start
     .container
       h2.text-center-h2 最新消息
-      img.img-fluid(src='https://picsum.photos/1140/230' alt='')
+      
+      //- .loading-overlay 
+      //-   .loader      
+      .parent 
+        .child      
+          img(src="public/images/banner_111.jpg", alt="")
+          img(src="public/images/banner_222.jpg", alt="")
+          img(src="public/images/banner_333.jpg", alt="")
+          img(src="public/images/banner_444.jpg", alt="")
+        .left-arrow
+          .triangle2 
+        .right-arrow 
+          .triangle4       
+        ol.indicator
+          li.active
+          
+          
+          
+         
+     
       h2.text-center-h2 精選商品
       .row
         .col-6.col-md-4.col-lg-4

@@ -77,16 +77,16 @@ html(lang='en')
           form.form-register(action="javascript:;")
             h2.text-red-center 聯絡我們
             .input-group
-              label(for="account") 用戶名
-              input(type="text" id="account")
+              label(for="account") 
+              input.input-width(type="text" id="account" placeholder='用戶名')
             .input-group
-              label(for="account") 電子郵件
-              input(type="text" id="account")
+              label(for="account") 
+              input.input-width(type="text" id="account" placeholder='電子郵件')
             .input-group
-              label-2(for="account") 輸入您想詢問的問題，也歡迎您留下電子信箱以外的聯絡方式，謝謝！
-              input-2(type="text" id="account")  
+              label(for="account") 
+              textarea.input-width.input-height(name="", cols="30", rows="10" placeholder='輸入您想詢問的問題，也歡迎您留下電子信箱以外的聯絡方式，謝謝！')
             .input-group.flex-space-center
-              input.btn-register.w-48(type="submit" value="發送")
+              input.input-width.btn-register.w-48(type="submit" value="發送" )
 
 
     //---------------------------------------------- content end

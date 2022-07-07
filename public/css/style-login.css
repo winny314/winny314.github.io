@@ -755,7 +755,7 @@ article {
   margin-top: 100px;
   margin-bottom: 270px;
   padding: 10px 50px;
-  border: #DEBEC1 1px solid;
+  border: #80c0a4 1px solid;
   border-radius: 3px;
 }
 
@@ -763,7 +763,7 @@ article {
   margin-top: 80px;
   margin-bottom: 40px;
   padding: 10px 50px;
-  border: #DEBEC1 1px solid;
+  border: #80c0a4 1px solid;
   border-radius: 3px;
 }
 
@@ -773,41 +773,19 @@ article {
   margin-bottom: 10px;
 }
 
-label {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  font-size: 14px;
-  font-weight: 900;
-  color: rgba(54, 50, 48, 0.6);
-  display: block;
-}
-
-label-2 {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  font-size: 14px;
-  font-weight: 900;
-  color: rgba(54, 50, 48, 0.6);
-  display: block;
-  padding-right: 4px;
-}
-
-input {
-  padding: 3px;
+.input-width {
+  width: 100%;
+  padding: 12px 10px;
   border: none;
   border-radius: 2px;
-  background-color: rgba(222, 190, 193, 0.4);
-  line-height: 30px;
+  background-color: rgba(128, 192, 164, 0.2);
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(54, 50, 48, 0.7);
 }
 
-input-2 {
-  padding: 3px;
-  border: none;
-  border-radius: 2px;
-  background-color: rgba(222, 190, 193, 0.4);
-  line-height: 100px;
+.input-height {
+  height: 150px;
 }
 
 .terms {
@@ -815,7 +793,7 @@ input-2 {
   margin-top: 20px;
   padding: 20px;
   height: 300px;
-  border: #DEBEC1 1px solid;
+  border: #80c0a4 1px solid;
   border-radius: 2px;
   overflow: auto;
 }
@@ -887,7 +865,7 @@ input-2[type=text] {
 
 hr {
   margin-top: 15px;
-  color: #C29498;
+  color: #B79483;
   border: 1px solid;
 }
 

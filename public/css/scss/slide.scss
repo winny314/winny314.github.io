@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+.parent{
+    /* 可視範圍寬 */
+    /* width: 500px; */
+    width:100%;
+    /* max-width: 600px; */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.child{
+    /* 圖片寬度*項目個數 */
+    /* width: 2000px; */
+    /* 去除行內空白，文字大小0 */
+    font-size: 0;
+}
+h1{
+    font-size: 40px;
+}
+.parent img{
+    /* 同.parent寬 */
+    width: 500px;
+}
+/* div時用float */
+/* .son{
+    float: left;
+} */
+.left-arrow, .right-arrow{
+    position: absolute;
+    cursor:pointer;
+    /* background-color: rgba(255, 255, 255, 0.52); */
+    width: 40px;
+    height: 100%;
+    top:0px;
+    /* 設定較小塊的感應區 */
+    /* height: 40px; */
+    /* top:50%; */
+    /* transform: translateY(-50%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+.left-arrow{
+    left:0px;
+}
+.right-arrow{
+    right:0px;
+}
+.indicator{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    bottom:10px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.indicator>li{
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.indicator>li:last-child{
+    margin-right: 0;
+}
+.indicator>li.active{
+    background-color: tomato;
+}
+// .loading-overlay{
+//     position: fixed;
+//     /* top:0;
+//     left:0;
+//     right:0;
+//     bottom:0; */
+//     width: 100vw;
+//     height: 100vh;
+//     top:0;
+//     left:0;
+//     background-color: lightblue;
+//     z-index: 999;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     /* left:-50vw */
+//     /* display: none; */
+//     transition: .3s all;
+//     transition-delay: 1s;
+// }
+// .loading-overlay.active{
+//     top:-100vh;
+// }
+// .loader {
+//     border: 16px solid #f3f3f3; /* Light grey */
+//     border-top: 16px solid #3498db; /* Blue */
+//     border-radius: 50%;
+//     width: 120px;
+//     height: 120px;
+//     animation: spin 2s linear infinite;
+// }
+
+// @keyframes spin {
+//     0% { transform: rotate(0deg); }
+//     100% { transform: rotate(360deg); }
+// }
